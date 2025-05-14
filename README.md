@@ -5,7 +5,6 @@
 A modern, responsive portfolio website template built with Astro and Tailwind CSS. Features multilingual support, dark/light mode, and optimized performance.
 
 ![Portfolio Preview](src/assets/portfolio-preview.png)
-*Note: Replace with actual screenshot of the portfolio*
 
 ## Features
 
