@@ -61,8 +61,8 @@
 
 1. **Clone this repository**
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/nicremo/astro-multilingual-portfolio-template.git
+cd astro-multilingual-portfolio-template
 ```
 
 2. **Install dependencies**
@@ -173,7 +173,7 @@ This project is available as open source under the terms of the [MIT License](LI
 
 ## 🙌 Contribute
 
-Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio-website/issues).
+Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/nicremo/astro-multilingual-portfolio-template/issues).
 
 ## 💖 Credits
 
