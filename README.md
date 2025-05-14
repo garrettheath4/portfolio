@@ -181,4 +181,4 @@ This template was created to serve as a starting point for personal portfolio we
 
 ---
 
-Created with ❤️ by [Your Name]
+Created with ❤️ by [Fabian](https://fabian-bitzer.de).
