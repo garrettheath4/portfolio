@@ -1,6 +1,11 @@
-# Portfolio Website Template in Astro
+# Astro Multilingual Portfolio Template
 
-A modern, multilingual portfolio website for developers, designers, and other professionals built with Astro and Tailwind CSS.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+A modern, responsive portfolio website template built with Astro and Tailwind CSS. Features multilingual support, dark/light mode, and optimized performance.
+
+![Portfolio Preview](src/assets/portfolio-preview.png)
+*Note: Replace with actual screenshot of the portfolio*
 
 ## Features
 
