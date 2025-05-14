@@ -4,8 +4,8 @@ import Button from '../ui/Buttons.astro'; // Ensuring .astro extension
 import LanguageSwitcher from '../ui/LanguageSwitcher.astro'; // Import the LanguageSwitcher component
 import { t } from '../../utils/i18n'; // Path relative to this component
 import { Image } from 'astro:assets';
-import logoLight from '../../assets/fb_logo.png';
-import logoDark from '../../assets/fb_logo_white.png';
+import logoLight from '../../assets/logo.png';
+import logoDark from '../../assets/logo_white.png';
 
 const lang = Astro.currentLocale;
 ---
@@ -15,10 +15,10 @@ const lang = Astro.currentLocale;
     <!-- Logo/Monogram with dark/light mode versions -->
     <a href={lang === 'en' ? '/en/' : '/'} class="block" aria-label="Homepage">
       <!-- Light mode logo (hidden in dark mode) -->
-      <Image src={logoLight} alt="Fabian Bitzer Logo" class="h-8 w-auto dark:hidden transition-opacity duration-300" />
+      <Image src={logoLight} alt="Portfolio Logo" class="h-8 w-auto dark:hidden transition-opacity duration-300" />
       
       <!-- Dark mode logo (hidden in light mode) -->
-      <Image src={logoDark} alt="Fabian Bitzer Logo" class="h-8 w-auto hidden dark:block transition-opacity duration-300" />
+      <Image src={logoDark} alt="Portfolio Logo" class="h-8 w-auto hidden dark:block transition-opacity duration-300" />
     </a>
     
     <!-- Desktop Navigation -->
