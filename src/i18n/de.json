@@ -1,0 +1,152 @@
+{
+  "site": {
+    "title": "Your Name - Portfolio",
+    "description": "Dualer Student für Digitale Medien mit Fokus auf Marketing, Projektmanagement & Media-Creation."
+  },
+  "nav": {
+    "start": "Start",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "contactButton": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Your Name",
+    "pitch": "Mit strukturiertem Projekt­management sorge ich dafür, dass kreative Ideen termintreu live gehen.",
+    "role": "Dualer Student @ Digitale Medien",
+    "ctaProjects": "Projekte ansehen",
+    "ctaAbout": "Mehr über mich"
+  },
+  "values": {
+    "title": "Meine Herangehensweise",
+    "subtitle": "Diese drei Werte prägen meine Arbeitsweise und helfen mir, überzeugende digitale Ergebnisse zu liefern.",
+    "card1Title": "Kreativität",
+    "card1Text": "Innovative Lösungsansätze und frische Ideen sind die Basis für überzeugende digitale Ergebnisse – immer im Kontext der Marke und Zielgruppe.",
+    "card2Title": "Struktur",
+    "card2Text": "Klare Prozesse, nachvollziehbare Workflows und präzises Projektmanagement sorgen dafür, dass Ideen termingerecht und qualitativ hochwertig umgesetzt werden.",
+    "card3Title": "Impact",
+    "card3Text": "Am Ende zählt das Ergebnis: Messbarer Erfolg durch nutzerzentrierte Lösungen, die echten Mehrwert bieten und zu Conversion und Kundenzufriedenheit führen."
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "subtitle": "Mit diesen Werkzeugen und Fähigkeiten setze ich Projekte effizient und kreativ um.",
+    "clusters": {
+      "designMedia": {
+        "title": "Design & Media",
+        "description": "Visuelle Konzeption und Medienproduktion für überzeugende digitale Erlebnisse."
+      },
+      "webIt": {
+        "title": "Web & IT",
+        "description": "Entwicklung und Betreuung von Webprojekten mit modernen Technologien."
+      },
+      "marketingContent": {
+        "title": "Marketing & Content",
+        "description": "Strategien für digitale Sichtbarkeit und zielgruppengerechte Inhalte."
+      },
+      "managementOrganization": {
+        "title": "Management & Organization",
+        "description": "Strukturierte Prozesse, effiziente Workflows und kollaborative Projektarbeit."
+      }
+    },
+    "category": {
+      "design": "Design",
+      "media": "Media",
+      "coding": "Coding",
+      "management": "Management",
+      "marketing": "Marketing",
+      "cms": "CMS"
+    },
+    "figma": {
+      "description": "UI/UX Design & Prototyping"
+    },
+    "premierePro": {
+      "description": "Videoschnitt & Animation"
+    },
+    "afterEffects": {
+      "description": "Motion Design & VFX"
+    },
+    "photoshop": {
+      "description": "Bildbearbeitung & Composing"
+    },
+    "illustrator": {
+      "description": "Vektorgrafik & Illustration"
+    },
+    "htmlCss": {
+      "description": "Frontend-Entwicklung"
+    },
+    "javascript": {
+      "description": "Interaktive Webprojekte"
+    },
+    "asana": {
+      "description": "Projektmanagement & Workflows"
+    },
+    "notion": {
+      "description": "Dokumentation & Wissensmanagement"
+    },
+    "ga4MetaAds": {
+      "description": "Kampagnen & Datenanalyse"
+    },
+    "miro": {
+      "description": "Kollaborative Konzepterstellung"
+    },
+    "wordpress": {
+      "description": "Content Management & Websites"
+    }
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Eine Auswahl meiner Arbeiten aus verschiedenen Bereichen – von UX/UI Design über Motion Design bis Webentwicklung.",
+    "dbTrainingRelaunch": {
+      "shortDescription": "Konzeption und Design einer neuen Bildungsplattform mit optimiertem Kursfinder und Buchungsprozess.",
+      "challenge": "Optimierung des Nutzererlebnisses und der Conversion beim Suchen und Buchung von Kursen.",
+      "approach": "Entwicklung eines nutzerzentrierten, mobil-optimierten Designs mit Fokus auf intuitive Navigation und klare Buchungs-CTAs.",
+      "result": "36% höhere Conversion und 22% geringere Abbruchrate im Buchungsprozess im Vergleich zur Vorgängerversion."
+    },
+    "mediaDashboard": {
+      "shortDescription": "Entwicklung eines interaktiven Dashboards zur Echtzeitanalyse von Kampagnenperformance über alle Kanäle hinweg.",
+      "challenge": "Integration verschiedener Datenquellen (GA4, Meta Ads, LinkedIn) in einer übersichtlichen Echtzeit-Darstellung.",
+      "approach": "Konzeption und Implementierung eines modularen Dashboards mit anpassbaren KPI-Karten und Filterfunktionen.",
+      "result": "Reduzierung der Reportingzeit um 68% und verbesserte Entscheidungsfindung durch tagesaktuelles KPI-Monitoring."
+    },
+    "dbExplainerVideos": {
+      "shortDescription": "Serie von animierten Erklärvideos, die komplexe Digitalisierungsprojekte einfach und ansprechend vermitteln.",
+      "challenge": "Vereinfachung technisch komplexer Inhalte für eine breite Zielgruppe ohne Fachkenntnisse.",
+      "approach": "Entwicklung eines visuellen Storytelling-Konzepts mit einheitlichem Corporate Design und klarer Bildsprache.",
+      "result": "Durchschnittlich 82% View-Through-Rate und positives Feedback von Führungskräften und Projektteams."
+    },
+    "buttonText": "Mehr dazu",
+    "allProjectsButtonText": "Alle Projekte ansehen"
+  },
+  "timeline": {
+    "title": "Mein Werdegang",
+    "subtitle": "Ausbildung, Berufserfahrung und wichtige Stationen meiner bisherigen Laufbahn.",
+    "item1Title": "Duales Studium Digitale Medien",
+    "item1Description": "Intensiver Einblick in Medienproduktion, IT & Marketing. Fachbereiche: Marketing & Medienproduktion, Social Media.",
+    "item2Title": "Wissenschaftliche Hilfskraft",
+    "item2Description": "Praxis in High-End Medientechnologien, digitale Videoproduktion. Entwicklung von Tutorials und Dokumentationen für Medientechnik.",
+    "item3Title": "Selbstständigkeit im Medienbereich",
+    "item3Description": "Eigenständige Umsetzung von Webprojekten, Videoproduktionen und Grafikdesign. Skills: Webentwicklung, Videoschnitt, Bildbearbeitung, Projektplanung.",
+    "buttonText": "Vollständiger Lebenslauf (PDF)"
+  },
+  "footerCTA": {
+    "title": "Bereit für Kollaboration?",
+    "subtitle": "Gemeinsam können wir deine digitalen Projekte zum Leben erwecken – mit Kreativität, Struktur und Impact.",
+    "buttonText": "Let's talk"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Hast du Fragen oder möchtest du an einem Projekt zusammenarbeiten? Ich freue mich auf deine Nachricht!",
+    "emailTitle": "E-Mail",
+    "emailButtonText": "E-Mail schreiben",
+    "phoneTitle": "Telefon",
+    "phoneButtonText": "Anrufen",
+    "linkedinTitle": "LinkedIn",
+    "linkedinButtonText": "Profil öffnen"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacyPolicy": "Datenschutz"
+  }
+}

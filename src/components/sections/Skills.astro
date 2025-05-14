@@ -1,0 +1,327 @@
+---
+import { t } from '../../utils/i18n';
+
+interface Props {
+  lang: string | undefined;
+}
+
+const { lang } = Astro.props;
+
+// Updated skillClusters data
+const skillClusters = [
+  {
+    id: 'design-media',
+    title: t('skills.clusters.designMedia.title', lang),
+    description: t('skills.clusters.designMedia.description', lang),
+    icon: 'palette', // Lucide icon name for cluster
+    tools: [
+      { name: 'Adobe Creative Cloud', icon: 'layers' }, // Generic Lucide icon
+      { name: 'Photoshop', icon: 'image' },
+      { name: 'Illustrator', icon: 'pen-tool' },
+      { name: 'Premiere Pro', icon: 'video' },
+      { name: 'After Effects', icon: 'clapperboard' },
+      { name: 'Lightroom', icon: 'camera' },
+      { name: 'Adobe Audition', icon: 'mic-2' },
+      { name: 'Figma', icon: 'figma' }, // Will use specific path below
+    ]
+  },
+  {
+    id: 'web-it',
+    title: t('skills.clusters.webIt.title', lang),
+    description: t('skills.clusters.webIt.description', lang),
+    icon: 'code-2', // Lucide icon name for cluster
+    tools: [
+      { name: 'HTML/CSS', icon: 'file-code' },
+      { name: 'JavaScript', icon: 'braces' },
+      { name: 'Python', icon: 'terminal' }, 
+      { name: 'Astro', icon: 'rocket' },
+      { name: 'WordPress', icon: 'globe-2' },
+      { name: 'Elementor', icon: 'layout-grid' },
+    ]
+  },
+  {
+    id: 'marketing-content',
+    title: t('skills.clusters.marketingContent.title', lang),
+    description: t('skills.clusters.marketingContent.description', lang),
+    icon: 'megaphone', // Lucide icon name for cluster
+    tools: [
+      { name: 'LinkedIn Marketing', icon: 'linkedin' },
+      { name: 'Content Creation', icon: 'edit-3' },
+      { name: 'SEO Basics', icon: 'search-check' },
+    ]
+  },
+  {
+    id: 'management-organization',
+    title: t('skills.clusters.managementOrganization.title', lang),
+    description: t('skills.clusters.managementOrganization.description', lang),
+    icon: 'kanban-square', // Lucide icon name for cluster
+    tools: [
+      { name: 'Asana', icon: 'check-square' },
+      { name: 'Notion', icon: 'book-text' },
+      { name: 'Miro', icon: 'layout-dashboard' },
+    ]
+  }
+];
+---
+
+<section id="skills" class="py-16 md:py-24">
+  <div class="max-w-container mx-auto px-6">
+    <div class="mb-8 md:mb-10 text-center" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="font-heading text-h2 text-secondary dark:text-white mb-4">{t('skills.title', lang)}</h2>
+      <p class="text-secondary/70 dark:text-white/70 max-w-2xl mx-auto">
+        {t('skills.subtitle', lang)}
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {skillClusters.map((cluster, index) => (
+        <div 
+          id={cluster.id}
+          class="skill-cluster bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay={index * 150}
+        >
+          <div class="cluster-header flex items-center mb-4">
+            <div class="icon-container mr-4 text-primary bg-primary/5 p-3 rounded-lg">
+              {/* SVG for Cluster Icon with specific paths */}
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="1.75" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+                class={`lucide lucide-${cluster.icon}`}
+                role="img"
+                aria-labelledby={`${cluster.id}-icon-title`}
+              >
+                <title id={`${cluster.id}-icon-title`}>{cluster.title} Icon</title>
+                {cluster.icon === 'palette' && (
+                  <>
+                    <circle cx="13.5" cy="6.5" r="2.5"></circle>
+                    <circle cx="17.5" cy="10.5" r="2.5"></circle>
+                    <circle cx="8.5" cy="7.5" r="2.5"></circle>
+                    <circle cx="6.5" cy="12.5" r="2.5"></circle>
+                    <path d="M12 2v1"></path>
+                    <path d="M12 21v1"></path>
+                    <path d="M4.93 4.93l.7.7"></path>
+                    <path d="M18.36 18.36l.7.7"></path>
+                    <path d="M2 12h1"></path>
+                    <path d="M21 12h1"></path>
+                    <path d="M4.93 19.07l.7-.7"></path>
+                    <path d="M18.36 5.64l.7-.7"></path>
+                  </>
+                )}
+                {cluster.icon === 'code-2' && (
+                  <>
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </>
+                )}
+                {cluster.icon === 'megaphone' && (
+                  <>
+                    <path d="m3 11 18-5v12L3 13"></path>
+                    <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                  </>
+                )}
+                {cluster.icon === 'kanban-square' && (
+                  <>
+                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <path d="M8 7v7"></path>
+                    <path d="M12 7v4"></path>
+                    <path d="M16 7v10"></path>
+                  </>
+                )}
+              </svg>
+            </div>
+            <h3 class="font-heading text-xl text-secondary dark:text-white">
+              {cluster.title}
+            </h3>
+          </div>
+          
+          <p class="text-secondary/70 dark:text-white/70 mb-4 cluster-description">
+            {cluster.description}
+          </p>
+          
+          <div class="cluster-tools grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+            {cluster.tools.map((tool) => (
+              <div class="tool-item flex flex-col items-center text-center">
+                <div class="tool-icon text-primary bg-primary/5 p-3 rounded-lg mb-2">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="20" 
+                    height="20" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="1.75" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round"
+                    class={`lucide lucide-${tool.icon}`}
+                    role="img"
+                    aria-labelledby={`${tool.name.replace(/\s+/g, '-').toLowerCase()}-icon-title`}
+                  >
+                    <title id={`${tool.name.replace(/\s+/g, '-').toLowerCase()}-icon-title`}>{tool.name} Icon</title>
+                    {tool.icon === 'layers' && (
+                      <>
+                        <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+                        <path d="m22 12-8.6 3.91a2 2 0 0 1-1.74 0L2 12"/>
+                        <path d="m22 17-8.6 3.91a2 2 0 0 1-1.74 0L2 17"/>
+                      </>
+                    )}
+                    {tool.icon === 'image' && (
+                      <>
+                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+                        <circle cx="9" cy="9" r="2"/>
+                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                      </>
+                    )}
+                    {tool.icon === 'pen-tool' && (
+                      <>
+                        <path d="m12 19 7-7 3 3-7 7-3-3z"/>
+                        <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                        <path d="m2 2 7.586 7.586"/>
+                        <circle cx="11" cy="11" r="2"/>
+                      </>
+                    )}
+                    {tool.icon === 'video' && (
+                      <>
+                        <path d="m22 8-6 4 6 4V8Z"/>
+                        <rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>
+                      </>
+                    )}
+                    {tool.icon === 'clapperboard' && (
+                      <>
+                        <path d="M4 11v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4Z"/>
+                        <path d="m4 11-.88-2.87a2 2 0 0 1 1.33-2.5l11.48-3.5a2 2 0 0 1 2.5 1.33l.87 2.87L4 11.01Z"/>
+                        <path d="m6.6 4.99 3.38 4.2"/>
+                        <path d="m11.86 3.38 3.38 4.2"/>
+                      </>
+                    )}
+                    {tool.icon === 'camera' && (
+                      <>
+                        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                        <circle cx="12" cy="13" r="3"/>
+                      </>
+                    )}
+                    {tool.icon === 'mic-2' && (
+                      <>
+                        <path d="m12 8-9.04 9.06a2.82 2.82 0 1 0 3.98 3.98L16 12"/>
+                        <circle cx="17" cy="7" r="5"/>
+                      </>
+                    )}
+                    {tool.icon === 'figma' && (
+                      <>
+                        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
+                        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
+                        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1 -7 0z"/>
+                        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1 -7 0z"/>
+                        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+                      </>
+                    )}
+                    {tool.icon === 'file-code' && (
+                      <>
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <path d="m10 13-2 2 2 2"/>
+                        <path d="m14 17 2-2-2-2"/>
+                      </>
+                    )}
+                    {tool.icon === 'braces' && (
+                      <>
+                        <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"/>
+                        <path d="M16 3h1a2 2 0 0 1 2 2v5a2 2 0 0 0 2 2 2 2 0 0 0-2 2v5a2 2 0 0 1-2 2h-1"/>
+                      </>
+                    )}
+                    {tool.icon === 'terminal' && (
+                      <>
+                        <polyline points="4 17 10 11 4 5"/>
+                        <line x1="12" x2="20" y1="19" y2="19"/>
+                      </>
+                    )}
+                    {tool.icon === 'rocket' && (
+                      <>
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                      </>
+                    )}
+                    {tool.icon === 'globe-2' && (
+                      <>
+                        <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
+                        <path d="M7 3.34V5a3 3 0 0 0 3 3h0a2 2 0 0 1 2 2v0c0 1.1.9 2 2 2h2"/>
+                        <path d="M11 21.95V18a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
+                        <circle cx="12" cy="12" r="10"/>
+                      </>
+                    )}
+                    {tool.icon === 'layout-grid' && (
+                      <>
+                        <rect width="7" height="7" x="3" y="3" rx="1"/>
+                        <rect width="7" height="7" x="14" y="3" rx="1"/>
+                        <rect width="7" height="7" x="14" y="14" rx="1"/>
+                        <rect width="7" height="7" x="3" y="14" rx="1"/>
+                      </>
+                    )}
+                    {tool.icon === 'linkedin' && (
+                      <>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect width="4" height="12" x="2" y="9"/>
+                        <circle cx="4" cy="4" r="2"/>
+                      </>
+                    )}
+                    {tool.icon === 'edit-3' && (
+                      <>
+                        <path d="M12 20h9"/>
+                        <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+                      </>
+                    )}
+                    {tool.icon === 'search-check' && (
+                      <>
+                        <path d="m8 11 2 2 4-4"/>
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.3-4.3"/>
+                      </>
+                    )}
+                    {tool.icon === 'check-square' && (
+                      <>
+                        <polyline points="9 11 12 14 22 4"/>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                      </>
+                    )}
+                    {tool.icon === 'book-text' && (
+                      <>
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                        <path d="M8 7h6"/>
+                        <path d="M8 11h8"/>
+                      </>
+                    )}
+                    {tool.icon === 'layout-dashboard' && (
+                      <>
+                        <rect width="7" height="9" x="3" y="3" rx="1"/>
+                        <rect width="7" height="5" x="14" y="3" rx="1"/>
+                        <rect width="7" height="9" x="14" y="12" rx="1"/>
+                        <rect width="7" height="5" x="3" y="16" rx="1"/>
+                      </>
+                    )}
+                  </svg>
+                </div>
+                <p class="text-sm font-medium text-secondary dark:text-white">{tool.name}</p>
+                {/* Skill level bar removed */}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Skills section will be animated via the animations.js file
+</script>

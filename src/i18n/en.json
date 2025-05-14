@@ -1,0 +1,152 @@
+{
+  "site": {
+    "title": "Your Name - Portfolio",
+    "description": "Dual Media Student focusing on Marketing, Project Management & Media Creation."
+  },
+  "nav": {
+    "start": "Start",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactButton": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I am",
+    "name": "Your Name",
+    "pitch": "With structured project management, I ensure that creative ideas go live on time.",
+    "role": "Dual Student @ Digital Media",
+    "ctaProjects": "View Projects",
+    "ctaAbout": "More About Me"
+  },
+  "values": {
+    "title": "My Approach",
+    "subtitle": "These three values shape my work and help me deliver compelling digital results.",
+    "card1Title": "Creativity",
+    "card1Text": "Innovative solutions and fresh ideas are the foundation for compelling digital results – always within the context of the brand and target audience.",
+    "card2Title": "Structure",
+    "card2Text": "Clear processes, understandable workflows, and precise project management ensure that ideas are implemented on time and to a high quality.",
+    "card3Title": "Impact",
+    "card3Text": "In the end, the result is what counts: Measurable success through user-centered solutions that offer real added value and lead to conversion and customer satisfaction."
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "subtitle": "With these tools and skills, I implement projects efficiently and creatively.",
+    "clusters": {
+      "designMedia": {
+        "title": "Design & Media",
+        "description": "Visual conception and media production for compelling digital experiences."
+      },
+      "webIt": {
+        "title": "Web & IT",
+        "description": "Development and support of web projects with modern technologies."
+      },
+      "marketingContent": {
+        "title": "Marketing & Content",
+        "description": "Strategies for digital visibility and target-group-oriented content."
+      },
+      "managementOrganization": {
+        "title": "Management & Organization",
+        "description": "Structured processes, efficient workflows, and collaborative project work."
+      }
+    },
+    "category": {
+      "design": "Design",
+      "media": "Media",
+      "coding": "Coding",
+      "management": "Management",
+      "marketing": "Marketing",
+      "cms": "CMS"
+    },
+    "figma": {
+      "description": "UI/UX Design & Prototyping"
+    },
+    "premierePro": {
+      "description": "Video Editing & Animation"
+    },
+    "afterEffects": {
+      "description": "Motion Design & VFX"
+    },
+    "photoshop": {
+      "description": "Image Editing & Composing"
+    },
+    "illustrator": {
+      "description": "Vector Graphics & Illustration"
+    },
+    "htmlCss": {
+      "description": "Frontend Development"
+    },
+    "javascript": {
+      "description": "Interactive Web Projects"
+    },
+    "asana": {
+      "description": "Project Management & Workflows"
+    },
+    "notion": {
+      "description": "Documentation & Knowledge Management"
+    },
+    "ga4MetaAds": {
+      "description": "Campaigns & Data Analysis"
+    },
+    "miro": {
+      "description": "Collaborative Concept Creation"
+    },
+    "wordpress": {
+      "description": "Content Management & Websites"
+    }
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "subtitle": "A selection of my work from various fields – from UX/UI Design to Motion Design and Web Development.",
+    "dbTrainingRelaunch": {
+      "shortDescription": "Conception and design of a new education platform with optimized course finder and booking process.",
+      "challenge": "Optimizing user experience and conversion in searching and booking courses.",
+      "approach": "Development of a user-centered, mobile-optimized design focusing on intuitive navigation and clear booking CTAs.",
+      "result": "36% higher conversion and 22% lower bounce rate in the booking process compared to the previous version."
+    },
+    "mediaDashboard": {
+      "shortDescription": "Development of an interactive dashboard for real-time analysis of campaign performance across all channels.",
+      "challenge": "Integration of various data sources (GA4, Meta Ads, LinkedIn) into a clear real-time display.",
+      "approach": "Conception and implementation of a modular dashboard with customizable KPI cards and filter functions.",
+      "result": "Reduction of reporting time by 68% and improved decision-making through daily KPI monitoring."
+    },
+    "dbExplainerVideos": {
+      "shortDescription": "Series of animated explainer videos that convey complex digitalization projects simply and engagingly.",
+      "challenge": "Simplifying technically complex content for a broad audience without technical expertise.",
+      "approach": "Development of a visual storytelling concept with a consistent corporate design and clear visual language.",
+      "result": "Average 82% view-through rate and positive feedback from executives and project teams."
+    },
+    "buttonText": "More Details",
+    "allProjectsButtonText": "View All Projects"
+  },
+  "timeline": {
+    "title": "My Career Path",
+    "subtitle": "Education, professional experience, and important milestones in my career so far.",
+    "item1Title": "Dual Study Program Digital Media",
+    "item1Description": "Intensive insights into media production, IT & marketing. Specializations: Marketing & Media Production, Social Media.",
+    "item2Title": "Research Assistant",
+    "item2Description": "Hands-on experience in high-end media technologies, digital video production. Development of tutorials and documentation for media technology.",
+    "item3Title": "Freelancing in Media",
+    "item3Description": "Independent implementation of web projects, video productions, and graphic design. Skills: Web Development, Video Editing, Image Editing, Project Planning.",
+    "buttonText": "Full Resume (PDF)"
+  },
+  "footerCTA": {
+    "title": "Ready for Collaboration?",
+    "subtitle": "Together we can bring your digital projects to life – with creativity, structure, and impact.",
+    "buttonText": "Let's talk"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions or want to collaborate on a project? I look forward to hearing from you!",
+    "emailTitle": "Email",
+    "emailButtonText": "Send Email",
+    "phoneTitle": "Phone",
+    "phoneButtonText": "Call",
+    "linkedinTitle": "LinkedIn",
+    "linkedinButtonText": "Open Profile"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "imprint": "Imprint",
+    "privacyPolicy": "Privacy Policy"
+  }
+}

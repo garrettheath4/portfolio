@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fabian-bitzer.de/sitemap-index.xml
