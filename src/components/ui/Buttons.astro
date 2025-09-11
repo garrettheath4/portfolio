@@ -7,10 +7,10 @@ export interface Props {
   class?: string;
 }
 
-const { 
-  text, 
-  href, 
-  variant = 'primary', 
+const {
+  text,
+  href,
+  variant = 'primary',
   size = 'md',
   class: className = '',
 } = Astro.props;
@@ -28,7 +28,7 @@ const sizes = {
 };
 ---
 
-<a 
+<a
   href={href}
   class:list={[
     'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 transform hover:scale-104 hover:shadow-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus-visible:ring-2 focus-visible:ring-primary/50',

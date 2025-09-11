@@ -25,9 +25,9 @@ function getNestedValue(obj: any, path: string): string | undefined {
 export function t(key: string, lang: string | undefined): string {
   const currentLang = lang || 'de'; // Default to 'de' if lang is undefined
   const langTranslations = translations[currentLang as keyof typeof translations] || translations.de;
-  
+
   const value = getNestedValue(langTranslations, key);
-  
+
   if (value === undefined) {
     console.warn(`Translation key "${key}" not found for language "${currentLang}". Falling back to key.`);
     // Fallback to trying the default language if not already trying it

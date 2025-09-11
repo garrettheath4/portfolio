@@ -16,11 +16,11 @@ const { lang } = Astro.props;
         {t('contact.subtitle', lang)}
       </p>
     </div>
-    
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Email Card -->
-      <a 
-        href="mailto:your.email@example.com" 
+      <a
+        href="mailto:your.email@example.com"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
         data-aos-delay="100"
@@ -31,11 +31,11 @@ const { lang } = Astro.props;
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-          
+
           <!-- Lottie Animation Placeholder - Paper Plane -->
           <div id="email-animation" class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        
+
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.emailTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
           your.email@example.com
@@ -49,10 +49,10 @@ const { lang } = Astro.props;
           </svg>
         </span>
       </a>
-      
+
       <!-- Phone Card -->
-      <a 
-        href="tel:+12345678901" 
+      <a
+        href="tel:+12345678901"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -63,7 +63,7 @@ const { lang } = Astro.props;
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
         </div>
-        
+
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.phoneTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
           +1 234 567 8901
@@ -77,12 +77,12 @@ const { lang } = Astro.props;
           </svg>
         </span>
       </a>
-      
+
       <!-- LinkedIn Card -->
-      <a 
-        href="https://www.linkedin.com/in/yourname/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
+      <a
+        href="https://www.linkedin.com/in/yourname/"
+        target="_blank"
+        rel="noopener noreferrer"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
         data-aos-delay="300"
@@ -95,7 +95,7 @@ const { lang } = Astro.props;
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </div>
-        
+
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.linkedinTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
           linkedin.com/in/yourname
@@ -115,14 +115,14 @@ const { lang } = Astro.props;
 
 <script>
   import { gsap } from 'gsap';
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     // Simple paper plane animation for email card
     // This could be replaced with a Lottie animation in production
-    
+
     const emailCard = document.querySelector('a[href^="mailto"]');
     const emailAnimation = document.getElementById('email-animation');
-    
+
     if (emailCard && emailAnimation) {
       // Create a simple animation that resembles a paper plane flying
       emailCard.addEventListener('mouseenter', () => {
@@ -130,7 +130,7 @@ const { lang } = Astro.props;
           opacity: 1,
           duration: 0.3
         });
-        
+
         // This is where you'd normally initialize a Lottie animation
         // For this demo, we'll create a simple paper plane with GSAP
         const paperPlane = document.createElement('div');
@@ -141,23 +141,23 @@ const { lang } = Astro.props;
         paperPlane.style.left = '50%';
         paperPlane.style.top = '50%';
         paperPlane.style.transform = 'translate(-50%, -50%)';
-        
+
         emailAnimation.innerHTML = '';
         emailAnimation.appendChild(paperPlane);
-        
+
         // Simple animation
-        gsap.fromTo(paperPlane, 
+        gsap.fromTo(paperPlane,
           { opacity: 0, scale: 0.5 },
-          { 
-            opacity: 1, 
-            scale: 1, 
-            rotation: 360, 
+          {
+            opacity: 1,
+            scale: 1,
+            rotation: 360,
             duration: 0.8,
             ease: 'back.out(1.7)'
           }
         );
       });
-      
+
       emailCard.addEventListener('mouseleave', () => {
         gsap.to('#email-animation', {
           opacity: 0,
