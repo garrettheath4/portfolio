@@ -43,7 +43,6 @@ export default defineConfig({
   // },
 
   vite: {
-    cacheDir: './.vite_cache',
     clearScreen: false,
 
     build: {
