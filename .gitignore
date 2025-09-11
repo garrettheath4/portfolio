@@ -1,6 +1,9 @@
 # build output
 .output/
 
+# Vite cache
+.vite_cache/
+
 # logs
 pnpm-debug.log*
 
@@ -16,8 +19,8 @@ pnpm-debug.log*
 # text from the webpage, and replace everything below this line with the text you just copied.           #
 #========================================================================================================#
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,astro,macos,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,astro,macos,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/node,astro,macos,visualstudiocode,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,astro,macos,visualstudiocode,vim
 
 ### Astro ###
 # Gitignore template for Astro projects
@@ -197,6 +200,27 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -216,4 +240,4 @@ dist
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/node,astro,macos,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/node,astro,macos,visualstudiocode,vim
