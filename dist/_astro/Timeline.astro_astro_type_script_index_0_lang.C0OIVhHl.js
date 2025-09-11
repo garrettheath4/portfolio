@@ -1,1 +1,0 @@
-import{g as e}from"./index.D3jsOSc0.js";import{S as r}from"./ScrollTrigger.C4gmGO9R.js";e.registerPlugin(r);document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelectorAll(".timeline-dot");e.from(t,{scrollTrigger:{trigger:"#timeline-container",start:"top 80%"},scale:0,opacity:0,duration:.5,stagger:.2,ease:"back.out(1.7)"})});
