@@ -15,7 +15,7 @@ export default defineConfig({
       prefixDefaultLocale: false, // German pages won't have /de/, English will have /en/
     },
   },
-  
+
   // Integrations
   integrations: [
     tailwind(),
@@ -39,11 +39,10 @@ export default defineConfig({
   //     entrypoint: 'astro/assets/services/sharp'
   //   }
   // },
-  
+
   vite: {
-    cacheDir: './.vite_cache',
     clearScreen: false,
-    
+
     build: {
       cssCodeSplit: true
     },
@@ -51,7 +50,7 @@ export default defineConfig({
       external: ['aos']
     }
   },
-  
+
   // Add cache headers for static assets
   headers: {
     '/_astro/*': [
