@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Your Name - Portfolio",
+    "title": "Garrett Koller - Portfolio",
     "description": "Dual Media Student focusing on Marketing, Project Management & Media Creation."
   },
   "nav": {
@@ -12,20 +12,20 @@
   },
   "hero": {
     "greeting": "Hello, I am",
-    "name": "Your Name",
-    "pitch": "With structured project management, I ensure that creative ideas go live on time.",
-    "role": "Dual Student @ Digital Media",
+    "name": "Garrett Koller",
+    "pitch": "I am driven to leverage my technical skills to create solutions that not only enhance the lives of individuals but also have a positive impact on society at large by focusing on diversity, accessibility, and sustainability.",
+    "role": "Lead Software Engineer @ Catalist",
     "ctaProjects": "View Projects",
     "ctaAbout": "More About Me"
   },
   "values": {
     "title": "My Approach",
     "subtitle": "These three values shape my work and help me deliver compelling digital results.",
-    "card1Title": "Creativity",
+    "card1Title": "Diversity",
     "card1Text": "Innovative solutions and fresh ideas are the foundation for compelling digital results – always within the context of the brand and target audience.",
-    "card2Title": "Structure",
+    "card2Title": "Accessibility",
     "card2Text": "Clear processes, understandable workflows, and precise project management ensure that ideas are implemented on time and to a high quality.",
-    "card3Title": "Impact",
+    "card3Title": "Sustainability",
     "card3Text": "In the end, the result is what counts: Measurable success through user-centered solutions that offer real added value and lead to conversion and customer satisfaction."
   },
   "skills": {

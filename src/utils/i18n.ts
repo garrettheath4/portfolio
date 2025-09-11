@@ -1,9 +1,9 @@
-import deTranslations from '../i18n/de.json';
 import enTranslations from '../i18n/en.json';
+import deTranslations from '../i18n/de.json';
 
 const translations = {
-  de: deTranslations,
   en: enTranslations,
+  de: deTranslations,
 };
 
 type TranslationKeys = keyof typeof deTranslations; // Or enTranslations, assuming they have the same keys
@@ -23,16 +23,16 @@ function getNestedValue(obj: any, path: string): string | undefined {
 }
 
 export function t(key: string, lang: string | undefined): string {
-  const currentLang = lang || 'de'; // Default to 'de' if lang is undefined
-  const langTranslations = translations[currentLang as keyof typeof translations] || translations.de;
-  
+  const currentLang = lang || 'en'; // Default to 'en' if lang is undefined
+  const langTranslations = translations[currentLang as keyof typeof translations] || translations.en;
+
   const value = getNestedValue(langTranslations, key);
-  
+
   if (value === undefined) {
     console.warn(`Translation key "${key}" not found for language "${currentLang}". Falling back to key.`);
     // Fallback to trying the default language if not already trying it
-    if (currentLang !== 'de') {
-      const fallbackValue = getNestedValue(translations.de, key);
+    if (currentLang !== 'en') {
+      const fallbackValue = getNestedValue(translations.en, key);
       if (fallbackValue !== undefined) {
         return fallbackValue;
       }
@@ -44,6 +44,6 @@ export function t(key: string, lang: string | undefined): string {
 
 // Utility to get all translations for a specific language, useful for passing to components
 export function getTranslations(lang: string | undefined) {
-  const currentLang = lang || 'de';
-  return translations[currentLang as keyof typeof translations] || translations.de;
+  const currentLang = lang || 'en';
+  return translations[currentLang as keyof typeof translations] || translations.en;
 }

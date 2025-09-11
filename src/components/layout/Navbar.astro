@@ -13,19 +13,19 @@ const lang = Astro.currentLocale;
 <header id="navbar" class="fixed top-0 w-full bg-white/90 dark:bg-neutral-dark/90 backdrop-blur-sm z-50 transition-all duration-300">
   <div class="max-w-container mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo/Monogram with dark/light mode versions -->
-    <a href={lang === 'en' ? '/en/' : '/'} class="block" aria-label="Homepage">
+    <a href={lang === 'de' ? '/de/' : '/'} class="block" aria-label="Homepage">
       <!-- Light mode logo (hidden in dark mode) -->
       <Image src={logoLight} alt="Portfolio Logo" class="h-8 w-auto dark:hidden transition-opacity duration-300" />
-      
+
       <!-- Dark mode logo (hidden in light mode) -->
       <Image src={logoDark} alt="Portfolio Logo" class="h-8 w-auto hidden dark:block transition-opacity duration-300" />
     </a>
-    
+
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8">
       <ul class="flex space-x-8">
         <li>
-          <a href={lang === 'en' ? '/en/' : '/'} class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href={lang === 'de' ? '/de/' : '/'} class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
         </li>
         <li>
           <a href="#about" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
@@ -37,13 +37,13 @@ const lang = Astro.currentLocale;
           <a href="#contact" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.contact', lang)}</a>
         </li>
       </ul>
-      
+
       <div class="flex items-center space-x-4">
         <ThemeToggle /> {/* Removed client:visible */}
         <LanguageSwitcher /> {/* Removed client:load as diagnostic */}
       </div>
     </nav>
-    
+
     <!-- Mobile menu button -->
     <div class="flex items-center space-x-4 md:hidden">
       <ThemeToggle /> {/* Removed client:visible */}
@@ -56,13 +56,13 @@ const lang = Astro.currentLocale;
       </button>
     </div>
   </div>
-  
+
   <!-- Mobile Navigation Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-neutral-dark border-t border-gray-200 dark:border-gray-800">
     <div class="max-w-container mx-auto px-6 py-4">
       <ul class="flex flex-col space-y-4">
         <li>
-          <a href={lang === 'en' ? '/en/' : '/'} class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href={lang === 'de' ? '/de/' : '/'} class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
         </li>
         <li>
           <a href="#about" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
@@ -154,7 +154,7 @@ const lang = Astro.currentLocale;
     font-weight: 500;
     transition: color 0.3s ease;
   }
-  
+
   .nav-link::after {
     content: '';
     position: absolute;
@@ -165,12 +165,12 @@ const lang = Astro.currentLocale;
     background-color: theme('colors.primary');
     transition: width 0.3s ease;
   }
-  
+
   .nav-link:hover::after,
   .nav-link.active::after {
     width: 100%;
   }
-  
+
   .nav-link.active {
     color: theme('colors.primary');
   }

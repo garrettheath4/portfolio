@@ -4,18 +4,18 @@ import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 
 export default defineConfig({
-  site: 'https://fabian-bitzer.de/', // You should update this to your actual site URL
+  site: 'https://garrettheath4.com/',
   output: 'static',
   trailingSlash: 'always',
 
   i18n: {
-    defaultLocale: 'de',
-    locales: ['de', 'en'],
+    defaultLocale: 'en',
+    locales: ['en', 'de'],
     routing: {
-      prefixDefaultLocale: false, // German pages won't have /de/, English will have /en/
+      prefixDefaultLocale: false, // English pages won't have /en/, German will have /de/
     },
   },
-  
+
   // Integrations
   integrations: [
     tailwind(),
@@ -39,11 +39,11 @@ export default defineConfig({
   //     entrypoint: 'astro/assets/services/sharp'
   //   }
   // },
-  
+
   vite: {
     cacheDir: './.vite_cache',
     clearScreen: false,
-    
+
     build: {
       cssCodeSplit: true
     },
@@ -51,7 +51,7 @@ export default defineConfig({
       external: ['aos']
     }
   },
-  
+
   // Add cache headers for static assets
   headers: {
     '/_astro/*': [

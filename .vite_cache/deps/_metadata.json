@@ -1,37 +1,37 @@
 {
-  "hash": "a90e8ef1",
-  "configHash": "b6c65aef",
+  "hash": "7b8e0cb6",
+  "configHash": "a0eb073f",
   "lockfileHash": "9e2fcbaf",
-  "browserHash": "80e2ded1",
+  "browserHash": "52c030ed",
   "optimized": {
     "astro > cssesc": {
       "src": "../../node_modules/cssesc/cssesc.js",
       "file": "astro___cssesc.js",
-      "fileHash": "0e304978",
+      "fileHash": "fdf55442",
       "needsInterop": true
     },
     "astro > aria-query": {
       "src": "../../node_modules/aria-query/lib/index.js",
       "file": "astro___aria-query.js",
-      "fileHash": "b8657623",
+      "fileHash": "833013a9",
       "needsInterop": true
     },
     "astro > axobject-query": {
       "src": "../../node_modules/axobject-query/lib/index.js",
       "file": "astro___axobject-query.js",
-      "fileHash": "58e55283",
+      "fileHash": "108d8063",
       "needsInterop": true
     },
     "gsap": {
       "src": "../../node_modules/gsap/index.js",
       "file": "gsap.js",
-      "fileHash": "20ea51d7",
+      "fileHash": "8cde70f2",
       "needsInterop": false
     },
     "gsap/ScrollTrigger": {
       "src": "../../node_modules/gsap/ScrollTrigger.js",
       "file": "gsap_ScrollTrigger.js",
-      "fileHash": "c8fb901d",
+      "fileHash": "143a306b",
       "needsInterop": false
     }
   },
