@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Your Name - Portfolio",
+    "title": "Garrett Koller - Portfolio",
     "description": "Dualer Student für Digitale Medien mit Fokus auf Marketing, Projektmanagement & Media-Creation."
   },
   "nav": {
@@ -12,7 +12,7 @@
   },
   "hero": {
     "greeting": "Hallo, ich bin",
-    "name": "Your Name",
+    "name": "Garrett Koller",
     "pitch": "Mit strukturiertem Projekt­management sorge ich dafür, dass kreative Ideen termintreu live gehen.",
     "role": "Dualer Student @ Digitale Medien",
     "ctaProjects": "Projekte ansehen",
