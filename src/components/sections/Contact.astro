@@ -1,6 +1,8 @@
 ---
 import { t } from '../../utils/i18n';
 
+import Obfuscate from 'react-obfuscate';
+
 interface Props {
   lang: string | undefined;
 }
@@ -22,8 +24,10 @@ const phone = atob('KzEgOTE4LTQzOS02MzYy');
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Email Card -->
-      <a
-        href={"mailto:" + email}
+      <Obfuscate
+        email={email}
+        obfuscateChildren={false}
+        client:only="preact"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
         data-aos-delay="100"
@@ -41,21 +45,23 @@ const phone = atob('KzEgOTE4LTQzOS02MzYy');
 
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.emailTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
-          {email}
+          <Obfuscate element="span" email={email} client:only="preact" />
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
-          {t('contact.emailButtonText', lang)}
+          <span>{t('contact.emailButtonText', lang)}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1" role="img" aria-labelledby="emailArrowIconTitle">
             <title id="emailArrowIconTitle">{t('contact.emailButtonText', lang)} Arrow</title>
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
           </svg>
         </span>
-      </a>
+      </Obfuscate>
 
       <!-- Phone Card -->
-      <a
-        href={"tel:" + phone.replace(/[^+0-9]/g, "")}
+      <Obfuscate
+        tel={phone.replace(/[^+0-9]/g, "")}
+        obfuscateChildren={false}
+        client:only="preact"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -69,7 +75,7 @@ const phone = atob('KzEgOTE4LTQzOS02MzYy');
 
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.phoneTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
-          {phone}
+          <Obfuscate element="span" tel={phone} client:only="preact" />
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
           {t('contact.phoneButtonText', lang)}
@@ -79,7 +85,7 @@ const phone = atob('KzEgOTE4LTQzOS02MzYy');
             <path d="m12 5 7 7-7 7"></path>
           </svg>
         </span>
-      </a>
+      </Obfuscate>
 
       <!-- LinkedIn Card -->
       <a
