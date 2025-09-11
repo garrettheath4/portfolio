@@ -1,6 +1,9 @@
 # build output
 .output/
 
+# Vite cache
+.vite_cache/
+
 # logs
 pnpm-debug.log*
 
