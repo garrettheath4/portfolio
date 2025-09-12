@@ -6,21 +6,21 @@ interface Props {
 const { id = "theme-toggle" } = Astro.props;
 ---
 
-<button 
-  id={id} 
-  type="button" 
+<button
+  id={id}
+  type="button"
   class="theme-toggle-btn relative inline-flex items-center justify-center w-10 h-10 p-2 rounded-lg text-secondary dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary/50"
   aria-label="Toggle Dark Mode"
 >
   <!-- Sun icon (displayed in dark mode) -->
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    class="h-5 w-5 absolute dark:opacity-100 opacity-0 transition-opacity duration-300" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    stroke-width="1.75" 
-    stroke-linecap="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-5 w-5 absolute dark:opacity-100 opacity-0 transition-opacity duration-300"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
     stroke-linejoin="round"
   >
     <circle cx="12" cy="12" r="5"></circle>
@@ -33,16 +33,16 @@ const { id = "theme-toggle" } = Astro.props;
     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
   </svg>
-  
+
   <!-- Moon icon (displayed in light mode) -->
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    class="h-5 w-5 absolute opacity-100 dark:opacity-0 transition-opacity duration-300" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    stroke-width="1.75" 
-    stroke-linecap="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-5 w-5 absolute opacity-100 dark:opacity-0 transition-opacity duration-300"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
     stroke-linejoin="round"
   >
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>

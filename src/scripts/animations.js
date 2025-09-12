@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
     delay: 50,
     disableMutationObserver: false,
   });
-  
+
   // Refresh AOS when window resizes
   window.addEventListener('resize', () => {
     AOS.refresh();
   });
-  
+
   // Custom animations for specific elements using GSAP
-  
+
   // Navbar animations - sticky effect
   const navbar = document.getElementById('navbar');
-  
+
   if (navbar) {
     ScrollTrigger.create({
       start: 'top-=200',
@@ -36,38 +36,38 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleClass: { className: 'shadow-md', targets: navbar }
     });
   }
-  
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      
+
       const targetId = this.getAttribute('href');
-      
+
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
-      
+
       if (targetElement) {
         // Get the navbar height for offset
         const navbarHeight = navbar ? navbar.offsetHeight : 0;
-        
+
         window.scrollTo({
           top: targetElement.offsetTop - navbarHeight - 20,
           behavior: 'smooth'
         });
-        
+
         // Update URL hash without scrolling
         history.pushState(null, null, targetId);
       }
     });
   });
-  
+
   // Scroll-triggered animations for sections
-  
+
   // Timeline section animation
   const timelineItems = document.querySelectorAll('#timeline .timeline-item');
-  
+
   if (timelineItems.length > 0) {
     gsap.from(timelineItems, {
       scrollTrigger: {
@@ -81,19 +81,19 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: 'power3.out'
     });
   }
-  
+
   // Skills section animations - combines AOS for scroll and GSAP for hover effects
   const skillClusters = document.querySelectorAll('.skill-cluster');
-  
+
   if (skillClusters.length > 0) {
     // We'll let AOS handle the scroll animations, and use GSAP for hover effects
-    
+
     skillClusters.forEach(cluster => {
       const toolItems = cluster.querySelectorAll('.tool-item');
       const clusterHeader = cluster.querySelector('.cluster-header');
       const clusterDescription = cluster.querySelector('.cluster-description');
       const clusterIcon = cluster.querySelector('.icon-container svg');
-      
+
       // Enhanced cluster hover effect with more dynamic animations
       const primaryColorRGB = getComputedStyle(document.documentElement).getPropertyValue('--color-primary-rgb').trim() || '37, 99, 235';
       const initialBorderColor = getComputedStyle(cluster).borderColor;
@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
       cluster.addEventListener('mouseenter', () => {
         // Kill any existing animations
         if (hoverTimeline) hoverTimeline.kill();
-        
+
         // Create new timeline for hover effect
         hoverTimeline = gsap.timeline();
-        
+
         // Add various animations to the timeline
         hoverTimeline
           .to(cluster, {
@@ -146,10 +146,10 @@ document.addEventListener('DOMContentLoaded', () => {
       cluster.addEventListener('mouseleave', () => {
         // Kill any existing animations
         if (hoverTimeline) hoverTimeline.kill();
-        
+
         // Create new timeline for hover-out effect
         hoverTimeline = gsap.timeline();
-        
+
         // Reset all animations
         hoverTimeline
           .to(cluster, {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 0)
           .to(clusterDescription, {
             opacity: 1,
-            x: 0, 
+            x: 0,
             duration: 0.3,
             ease: 'power1.out'
           }, 0)
@@ -183,28 +183,28 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: 'power1.out'
           }, 0);
       });
-      
+
       // Enhanced tool item hover animations
       toolItems.forEach(item => {
         const icon = item.querySelector('.tool-icon svg');
         const label = item.querySelector('p');
-        
+
         if (icon && label) {
           let itemHoverTimeline;
-          
+
           item.addEventListener('mouseenter', () => {
             // Kill any existing animations
             if (itemHoverTimeline) itemHoverTimeline.kill();
-            
+
             // Create new timeline for item hover
             itemHoverTimeline = gsap.timeline();
-            
+
             // Add coordinated animations for the tool item
             itemHoverTimeline
-              .to(icon, { 
-                scale: 1.3, 
-                rotate: 10, 
-                duration: 0.25, 
+              .to(icon, {
+                scale: 1.3,
+                rotate: 10,
+                duration: 0.25,
                 ease: 'back.out(1.7)'
               }, 0)
               .to(label, {
@@ -215,21 +215,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 ease: 'power1.out'
               }, 0);
           });
-          
+
           item.addEventListener('mouseleave', () => {
             // Kill any existing animations
             if (itemHoverTimeline) itemHoverTimeline.kill();
-            
+
             // Create new timeline for item hover-out
             itemHoverTimeline = gsap.timeline();
-            
+
             // Reset all animations
             itemHoverTimeline
-              .to(icon, { 
-                scale: 1, 
-                rotate: 0, 
-                duration: 0.25, 
-                ease: 'power1.out' 
+              .to(icon, {
+                scale: 1,
+                rotate: 0,
+                duration: 0.25,
+                ease: 'power1.out'
               }, 0)
               .to(label, {
                 scale: 1,
@@ -243,13 +243,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-  
+
   // Project cards hover effect
   const projectCards = document.querySelectorAll('#projects .group');
-  
+
   projectCards.forEach(card => {
     const image = card.querySelector('img');
-    
+
     if (image) {
       card.addEventListener('mouseenter', () => {
         gsap.to(image, {
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ease: 'power2.out'
         });
       });
-      
+
       card.addEventListener('mouseleave', () => {
         gsap.to(image, {
           scale: 1,
