@@ -59,11 +59,11 @@ const {
     <!-- Hreflang links -->
     {/* For the default locale (en) */}
     <link rel="alternate" hreflang="en" href={new URL(Astro.url.pathname.replace('/de/', '/'), Astro.site!).href.replace('/de', '')} />
-    {/* For the English locale */}
+    {/* For the German locale */}
     <link rel="alternate" hreflang="de" href={new URL('/de' + Astro.url.pathname.replace('/de/', '/'), Astro.site!).href} />
     {/* x-default */}
     <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname.replace('/en/', '/'), Astro.site!).href.replace('/en', '')} />
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
