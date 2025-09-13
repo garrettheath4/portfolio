@@ -32,21 +32,17 @@
     "title": "Skills & Tools",
     "subtitle": "With these tools and skills, I implement projects efficiently and creatively.",
     "clusters": {
-      "designMedia": {
-        "title": "Design & Media",
-        "description": "Visual conception and media production for compelling digital experiences."
+      "backend": {
+        "title": "Backend & Architecture",
+        "description": "Designing robust APIs, orchestrating cloud services, and keeping systems reliable and scalable."
       },
-      "webIt": {
-        "title": "Web & IT",
+      "frontend": {
+        "title": "Frontend & UX",
         "description": "Development and support of web projects with modern technologies."
       },
-      "marketingContent": {
-        "title": "Marketing & Content",
-        "description": "Strategies for digital visibility and target-group-oriented content."
-      },
-      "managementOrganization": {
-        "title": "Management & Organization",
-        "description": "Structured processes, efficient workflows, and collaborative project work."
+      "aiML": {
+        "title": "Data & Applied AI",
+        "description": "Turning raw data and modern ML tools into usable, real-world features and insights."
       }
     },
     "category": {

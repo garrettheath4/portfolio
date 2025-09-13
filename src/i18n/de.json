@@ -32,11 +32,11 @@
     "title": "Skills & Tools",
     "subtitle": "Mit diesen Werkzeugen und Fähigkeiten setze ich Projekte effizient und kreativ um.",
     "clusters": {
-      "designMedia": {
+      "backend": {
         "title": "Design & Media",
         "description": "Visuelle Konzeption und Medienproduktion für überzeugende digitale Erlebnisse."
       },
-      "webIt": {
+      "frontend": {
         "title": "Web & IT",
         "description": "Entwicklung und Betreuung von Webprojekten mit modernen Technologien."
       },

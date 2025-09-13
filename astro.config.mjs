@@ -18,21 +18,16 @@ export default defineConfig({
   },
 
   // Integrations
-  integrations: [
-    tailwind(),
-    sitemap(),
-    preact({ compat: true }),
-    compress({
-      css: true,
-      html: true,
-      js: true,
-      img: {
-        quality: 80,
-      },
-      svg: true,
-      logger: 1,
-    })
-  ],
+  integrations: [tailwind(), sitemap(), preact({ compat: true }), compress({
+    css: true,
+    html: true,
+    js: true,
+    img: {
+      quality: 80,
+    },
+    svg: true,
+    logger: 1,
+  })],
 
   // Built-in image optimization settings
   // Removed image service config as sharp is not a direct project dependency
