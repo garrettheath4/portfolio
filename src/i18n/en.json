@@ -19,14 +19,14 @@
     "ctaAbout": "More About Me"
   },
   "values": {
-    "title": "My Approach",
-    "subtitle": "These three values shape my work and help me deliver compelling digital results.",
-    "card1Title": "Diversity",
-    "card1Text": "Innovative solutions and fresh ideas are the foundation for compelling digital results – always within the context of the brand and target audience.",
-    "card2Title": "Accessibility",
-    "card2Text": "Clear processes, understandable workflows, and precise project management ensure that ideas are implemented on time and to a high quality.",
-    "card3Title": "Sustainability",
-    "card3Text": "In the end, the result is what counts: Measurable success through user-centered solutions that offer real added value and lead to conversion and customer satisfaction."
+    "title": "My Values",
+    "subtitle": "These three values shape my work and help me design compelling software.",
+    "card1Title": "Impact with Integrity",
+    "card1Text": "I prioritize building technology that serves people responsibly and contributes positively to society.",
+    "card2Title": "Craftsmanship & Clarity",
+    "card2Text": "I believe in building clear, reliable systems and user experiences that feel effortless.",
+    "card3Title": "Collaboration & Growth",
+    "card3Text": "I value collaboration, mentoring, and knowledge-sharing as essential parts of sustainable engineering."
   },
   "skills": {
     "title": "Skills & Tools",
