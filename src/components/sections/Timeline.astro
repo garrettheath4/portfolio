@@ -8,26 +8,7 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const timelineItems = [
-  {
-    period: '10/2023 - vorauss. 06/2026',
-    title: t('timeline.item1Title', lang),
-    company: 'Deutsche Bahn AG & DHBW Mannheim',
-    description: t('timeline.item1Description', lang)
-  },
-  {
-    period: '01/2024 - 12/2024',
-    title: t('timeline.item2Title', lang),
-    company: 'Duale Hochschule Baden-Württemberg',
-    description: t('timeline.item2Description', lang)
-  },
-  {
-    period: '01/2023 - Heute',
-    title: t('timeline.item3Title', lang),
-    company: 'FABINCRM',
-    description: t('timeline.item3Description', lang)
-  }
-];
+const timelineItems = ["catalist", "pc", "ga", "bah", "internship", "condor", "its", "wlu"];
 ---
 
 <section class="py-16 md:py-24">
@@ -54,10 +35,10 @@ const timelineItems = [
 
             <!-- Content -->
             <div class="md:w-1/2 pl-10 md:pl-0 md:pr-12 md:text-right">
-              <span class="inline-block font-mono text-xs text-primary mb-2 uppercase tracking-wider">{item.period}</span>
-              <h3 class="font-heading text-xl text-secondary dark:text-white mb-1">{item.title}</h3>
-              <h4 class="font-medium text-secondary/80 dark:text-white/80 mb-2">{item.company}</h4>
-              <p class="text-secondary/70 dark:text-white/70">{item.description}</p>
+              <span class="inline-block font-mono text-xs text-primary mb-2 uppercase tracking-wider">{t("timeline." + item + ".period", lang)}</span>
+              <h3 class="font-heading text-xl text-secondary dark:text-white mb-1">{t("timeline." + item + ".title", lang)}</h3>
+              <h4 class="font-medium text-secondary/80 dark:text-white/80 mb-2">{t("timeline." + item + ".company", lang)}</h4>
+              <p class="text-secondary/70 dark:text-white/70">{t("timeline." + item + ".description", lang)}</p>
             </div>
 
             <div class="md:w-1/2 md:pl-12">

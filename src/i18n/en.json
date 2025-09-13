@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Garrett Koller - Portfolio",
+    "title": "Garrett Koller – Portfolio",
     "description": "Dual Media Student focusing on Marketing, Project Management & Media Creation."
   },
   "nav": {
@@ -127,7 +127,55 @@
     "item2Description": "Hands-on experience in high-end media technologies, digital video production. Development of tutorials and documentation for media technology.",
     "item3Title": "Freelancing in Media",
     "item3Description": "Independent implementation of web projects, video productions, and graphic design. Skills: Web Development, Video Editing, Image Editing, Project Planning.",
-    "buttonText": "Full Resume (PDF)"
+    "buttonText": "Full Resume (PDF)",
+    "catalist": {
+      "period": "Sep 2015 – Present",
+      "title": "Lead Software Engineer",
+      "company": "Catalist, LLC",
+      "description": "Lead developer for 10 projects across 5 different languages, including Java, Scala, Python, and TypeScript"
+    },
+    "pc": {
+      "period": "Nov 2024 – Feb 2025",
+      "title": "Senior Software Engineer",
+      "company": "Private Collection",
+      "description": "Developed full-stack Redwood JS web app for real estate brokerage clients"
+    },
+    "ga": {
+      "period": "Sep-Dec 2017",
+      "title": "Continuing Education",
+      "company": "General Assembly",
+      "description": "User Experience Design course (on campus)"
+    },
+    "bah": {
+      "period": "Jul 2014 – Sep 2015",
+      "title": "Software Engineer Consultant",
+      "company": "Booz Allen Hamilton",
+      "description": "Developed mission support software written in Java EE"
+    },
+    "internship": {
+      "period": "Jun 2013 – Aug 2013",
+      "title": "Software Engineer Intern",
+      "company": "Booz Allen Hamilton",
+      "description": "Engineered browser anonymity solution using PHP, Java, and JavaScript"
+    },
+    "condor": {
+      "period": "Jun 2011 – May 2014",
+      "title": "Software Engineer Assistant",
+      "company": "Washington & Lee University",
+      "description": "Developed HTCondor supercomputing environment for campus"
+    },
+    "its": {
+      "period": "Sep 2010 – May 2014",
+      "title": "IT Client Services Assistant",
+      "company": "Washington & Lee University Help Desk",
+      "description": "Created videos promoting the ITS department, the university library, and the services they offer"
+    },
+    "wlu": {
+      "period": "2010 – 2014",
+      "title": "Undergraduate Student",
+      "company": "Washington & Lee University",
+      "description": "B.S. in Computer Science with a concentration in Music"
+    }
   },
   "footerCTA": {
     "title": "Ready for Collaboration?",
