@@ -25,7 +25,7 @@ const lang = Astro.currentLocale;
     <nav class="hidden md:flex items-center space-x-8">
       <ul class="flex space-x-8">
         <li>
-          <a href={lang === 'en' ? '/en/' : '/'} class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href="#start" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
         </li>
         <li>
           <a href="#about" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
@@ -62,7 +62,7 @@ const lang = Astro.currentLocale;
     <div class="max-w-container mx-auto px-6 py-4">
       <ul class="flex flex-col space-y-4">
         <li>
-          <a href={lang === 'en' ? '/en/' : '/'} class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href="#start" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
         </li>
         <li>
           <a href="#about" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
