@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 
 export default defineConfig({
-  site: 'https://fabian-bitzer.de/', // You should update this to your actual site URL
+  site: 'https://max-example.de/', // You should update this to your actual site URL
   output: 'static',
   trailingSlash: 'always',
 

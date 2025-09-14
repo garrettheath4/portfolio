@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Your Name - Portfolio",
+    "title": "Max Example - Portfolio",
     "description": "Dual Media Student focusing on Marketing, Project Management & Media Creation."
   },
   "nav": {
@@ -12,7 +12,7 @@
   },
   "hero": {
     "greeting": "Hello, I am",
-    "name": "Your Name",
+    "name": "Max Example",
     "pitch": "With structured project management, I ensure that creative ideas go live on time.",
     "role": "Dual Student @ Digital Media",
     "ctaProjects": "View Projects",
