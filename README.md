@@ -83,10 +83,13 @@ npm run dev
 
 Update your personal information in the following files:
 
+- Replace "Max Example" with your name throughout
+  - Examples: `Max Example`, `max-example` and `max-example@example.com`
 - `src/i18n/en.json` and `src/i18n/de.json`: Contains all text content in English and German
 - Replace images in `src/assets/` with your own:
   - `logo.png` and `logo_white.png` - Your brand logos
   - `profile.png` - Your profile photo
+  - `favicon.png` - The favicon for your website
   - Other images for projects and sections
 
 ### 🎭 Theme Colors
