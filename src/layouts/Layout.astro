@@ -3,9 +3,9 @@ import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
 import { t } from '../utils/i18n'; // Import the translation helper
-import { Image } from 'astro:assets';
 import favicon_white from '../assets/favicon.png';
 import profileImg from '../assets/profile.png';
+import { name, linkedin_url, github_url } from '../utils/me';
 
 export interface Props {
   title?: string;
@@ -88,14 +88,14 @@ const {
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Max Example",
+      "name": name,
       "url": Astro.site!.href,
       "image": new URL(profileImg.src, Astro.site!).href,
       "jobTitle": t('hero.role', lang), // "Dualer Student @ Digitale Medien" or "Dual Student @ Digital Media"
       "description": description, // Main site description
       "sameAs": [
-        "https://www.linkedin.com/in/max-example/",
-        "https://github.com/yourusername"
+        linkedin_url,
+        github_url
       ]
     })} />
   </head>

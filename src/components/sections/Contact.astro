@@ -2,22 +2,13 @@
 import Obfuscate from 'react-obfuscate';
 
 import { t } from '../../utils/i18n';
+import { email, phone, linkedin_short, linkedin_url } from '../../utils/me';
 
 interface Props {
   lang: string | undefined;
 }
 
 const { lang } = Astro.props;
-
-// The email and phone number are Base64 encoded to obfuscate them in the source code.
-// To update either one, encode the data in Base64 and paste the output as a string
-// argument to the corresponding `atob()` function below.
-// Mac/Linux command to Base64 encode:
-//     echo -n 'max-example@example.com' | base64
-// JavaScript command to Base64 encode:
-//     btoa('max-example@example.com')
-const email = atob('bWF4LWV4YW1wbGVAZXhhbXBsZS5jb20=');
-const phone = atob('KzEgMjM0LTU2Ny04OTAx');
 ---
 
 <section id="contact" class="py-16 md:py-24 bg-secondary dark:bg-neutral-dark text-white">
@@ -96,7 +87,7 @@ const phone = atob('KzEgMjM0LTU2Ny04OTAx');
 
       <!-- LinkedIn Card -->
       <a
-        href="https://www.linkedin.com/in/max-example/"
+        href={linkedin_url}
         target="_blank"
         rel="noopener noreferrer"
         class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
@@ -114,7 +105,7 @@ const phone = atob('KzEgMjM0LTU2Ny04OTAx');
 
         <h3 class="font-heading text-xl text-white mb-3">{t('contact.linkedinTitle', lang)}</h3>
         <p class="text-white/70 mb-4">
-          linkedin.com/in/max-example
+          {linkedin_short}
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
           {t('contact.linkedinButtonText', lang)}
