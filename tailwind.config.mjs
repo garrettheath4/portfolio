@@ -40,7 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         // Renamed to akzentGradient as per new concept, assuming this replaces the old gradient-highlight
-        'akzentGradient': 'linear-gradient(180deg, #0A84FF 0%, #4AC1FF 100%)', 
+        'akzentGradient': 'linear-gradient(180deg, #0A84FF 0%, #4AC1FF 100%)',
       },
     },
     screens: {
