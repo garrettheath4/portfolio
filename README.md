@@ -81,10 +81,20 @@ npm run dev
 
 ### 📝 Personal Information
 
-Update your personal information in the following files:
+Update your contact information in `src/utils/me.ts`:
+- Name
+- Homepage URL
+- LinkedIn username
+- GitHub username
 
-- Replace "Max Example" with your name throughout
-  - Examples: `Max Example`, `max-example` and `max-example@example.com`
+The following contact fields are also in `src/utils/me.ts` but are Base64 encoded to obfuscate them in the GitHub repo.
+See the comments in `me.ts` for instructions on how to encode your information in Base64 with a simple command.
+- Email
+- Phone
+- Address (for privacy policy)
+
+Also update your information in the following other files:
+- `astro.config.mjs` and `robots.txt`: Replace `https://max-example.de/` with your site's URL
 - `src/i18n/en.json` and `src/i18n/de.json`: Contains all text content in English and German
 - Replace images in `src/assets/` with your own:
   - `logo.png` and `logo_white.png` - Your brand logos

@@ -18,7 +18,7 @@ export default defineConfig({
   },
 
   // Integrations
-  integrations: [tailwind(), sitemap(), preact({ compat: true }), compress({
+  integrations: [tailwind(), sitemap(), compress({
     css: true,
     html: true,
     js: true,
@@ -27,6 +27,8 @@ export default defineConfig({
     },
     svg: true,
     logger: 1,
+  }), preact({
+    compat: true
   })],
 
   // Built-in image optimization settings
