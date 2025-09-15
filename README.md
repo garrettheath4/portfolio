@@ -84,7 +84,8 @@ npm run dev
 Update your personal information in the following files:
 
 - Replace "Max Example" with your name throughout
-  - Examples: `Max Example`, `max-example` and `max-example@example.com`
+  - Examples: `Max Example`, `max-example`, `max-example@example.com`, and `linkedin.com/in/max-example`
+- Replace email and phone number in `Contact.astro` (Base64 encoded; see comment in code)
 - `src/i18n/en.json` and `src/i18n/de.json`: Contains all text content in English and German
 - Replace images in `src/assets/` with your own:
   - `logo.png` and `logo_white.png` - Your brand logos

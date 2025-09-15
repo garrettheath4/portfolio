@@ -3,6 +3,8 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 
+import preact from '@astrojs/preact';
+
 export default defineConfig({
   site: 'https://max-example.de/', // You should update this to your actual site URL
   output: 'static',
@@ -17,20 +19,18 @@ export default defineConfig({
   },
 
   // Integrations
-  integrations: [
-    tailwind(),
-    sitemap(),
-    compress({
-      css: true,
-      html: true,
-      js: true,
-      img: {
-        quality: 80,
-      },
-      svg: true,
-      logger: 1,
-    })
-  ],
+  integrations: [tailwind(), sitemap(), compress({
+    css: true,
+    html: true,
+    js: true,
+    img: {
+      quality: 80,
+    },
+    svg: true,
+    logger: 1,
+  }), preact({
+    compat: true
+  })],
 
   // Built-in image optimization settings
   // Removed image service config as sharp is not a direct project dependency
