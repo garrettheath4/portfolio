@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { t } from '../utils/i18n';
+import { name, email, address_line_1, address_line_2 } from '../utils/me';
 
 const lang = 'de'; // Explicitly German for this page
 const pageTitle = "Datenschutzerklärung | " + t('site.title', lang);
@@ -17,14 +18,10 @@ const pageDescription = "Datenschutzerklärung der Webseite " + t('site.title', 
       <article class="prose dark:prose-invert max-w-none mx-auto bg-white dark:bg-neutral-dark p-6 md:p-8 rounded-lg shadow">
         <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
         <p>
-          [Vorname Nachname]<br />
-          [Bitte hier Ihre Straße und Hausnummer eintragen]<br />
-          [Bitte hier Ihre PLZ und Ort eintragen]<br />
-          E-Mail: [max-example@example.com]
-        </p>
-
-        <p class="mt-6 text-sm text-gray-500 dark:text-gray-400">
-          <em>Hinweis: Bitte ersetzen Sie die Platzhalter ([...]) durch Ihre tatsächlichen Daten. Der folgende Text ist ein allgemeines Muster und muss an Ihre spezifischen Gegebenheiten und die von Ihnen genutzten Dienste angepasst werden. Es wird dringend empfohlen, eine individuelle, anwaltlich geprüfte Datenschutzerklärung zu verwenden.</em>
+          {name}<br />
+          {address_line_1}<br />
+          {address_line_2}<br />
+          E-Mail: {email}
         </p>
 
         <h2>Ihre Betroffenenrechte</h2>

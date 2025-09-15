@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
+import { name, email, address_line_1, address_line_2 } from '../../utils/me';
 
 const lang = 'en'; // Explicitly English for this page
 const pageTitle = "Privacy Policy | " + t('site.title', lang);
@@ -17,14 +18,10 @@ const pageDescription = "Privacy Policy of the website " + t('site.title', lang)
       <article class="prose dark:prose-invert max-w-none mx-auto bg-white dark:bg-neutral-dark p-6 md:p-8 rounded-lg shadow">
         <p>The party responsible for processing data on this website (the "controller") for the purposes of the General Data Protection Regulation (GDPR) and other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:</p>
         <p>
-          [First Name Last Name]<br />
-          [Please enter your street and house number here]<br />
-          [Please enter your postal code and city here]<br />
-          Email: [max-example@example.com]
-        </p>
-
-        <p class="mt-6 text-sm text-gray-500 dark:text-gray-400">
-          <em>Note: Please replace the placeholders ([...]) with your actual data. The following text is a general template and must be adapted to your specific circumstances and the services you use. It is strongly recommended to use an individual, legally reviewed privacy policy.</em>
+          {name}<br />
+          {address_line_1}<br />
+          {address_line_2}<br />
+          Email: {email}
         </p>
 
         <h2>Your Rights as a Data Subject</h2>

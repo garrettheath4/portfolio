@@ -3,6 +3,7 @@ import { t } from '../../utils/i18n';
 import { Image } from 'astro:assets';
 import logoLight from '../../assets/logo.png';
 import logoDark from '../../assets/logo_white.png';
+import { name, linkedin_url, github_url } from '../../utils/me';
 
 interface Props {
   lang: string | undefined;
@@ -18,21 +19,21 @@ const currentYear = new Date().getFullYear();
       <div class="mb-4 md:mb-0">
         <a href={lang === 'de' ? '/de/' : '/'} class="block" aria-label="Homepage">
           <!-- Light mode logo (hidden in dark mode) -->
-          <Image src={logoLight} alt="Garrett Koller Logo" class="h-7 w-auto dark:hidden transition-opacity duration-300" />
+          <Image src={logoLight} alt={name + " Logo"} class="h-7 w-auto dark:hidden transition-opacity duration-300" />
 
           <!-- Dark mode logo (hidden in light mode) -->
-          <Image src={logoDark} alt="Garrett Koller Logo" class="h-7 w-auto hidden dark:block transition-opacity duration-300" />
+          <Image src={logoDark} alt={name + " Logo"} class="h-7 w-auto hidden dark:block transition-opacity duration-300" />
         </a>
       </div>
 
       <div class="text-sm text-secondary/60 dark:text-white/60">
-        &copy; {currentYear} Garrett Koller. {t('footer.copyright', lang)}
+        &copy; {currentYear} {name}. {t('footer.copyright', lang)}
       </div>
 
       <div class="mt-4 md:mt-0 flex items-center space-x-6">
         {/* LinkedIn Icon - aria-label already present */}
         <a
-          href="https://www.linkedin.com/in/garrettheath4/"
+          href={linkedin_url}
           target="_blank"
           rel="noopener noreferrer"
           class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
@@ -47,7 +48,7 @@ const currentYear = new Date().getFullYear();
         </a>
         {/* GitHub Icon - aria-label already present */}
         <a
-          href="https://github.com/garrettheath4"
+          href={github_url}
           target="_blank"
           rel="noopener noreferrer"
           class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
@@ -59,7 +60,6 @@ const currentYear = new Date().getFullYear();
             <path d="M9 18c-4.51 2-5-2-7-2"></path>
           </svg>
         </a>
-        {/* Instagram link removed as per request */}
       </div>
     </div>
 
