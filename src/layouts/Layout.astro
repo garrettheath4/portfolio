@@ -38,6 +38,10 @@ const {
     <!-- Canonical URL -->
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site!).href} />
 
+    <!-- Advertise dark-mode support -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="darkreader-lock" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site!).href} />

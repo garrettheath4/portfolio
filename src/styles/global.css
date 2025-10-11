@@ -12,6 +12,7 @@ html, body {
 
 :root {
   --color-primary-rgb: 37, 99, 235; /* Blue-600 RGB values */
+  color-scheme: light dark;
 }
 
 .dark {
