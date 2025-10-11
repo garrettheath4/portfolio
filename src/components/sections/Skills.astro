@@ -1,5 +1,5 @@
 ---
-import { PanelsTopLeftIcon, CodeXmlIcon, NetworkIcon, DatabaseIcon, WorkflowIcon, CloudIcon, BoxIcon, FileCode2Icon, TreePineIcon, WindIcon, AccessibilityIcon, CoffeeIcon, LucideServer, BracesIcon, LayersIcon, TerminalIcon, SendIcon } from '@lucide/astro';
+import { PanelsTopLeftIcon, CodeXmlIcon, DatabaseIcon, WorkflowIcon, CloudIcon, FileCode2Icon, TreePineIcon, WindIcon, AccessibilityIcon, CoffeeIcon, LucideServer, BracesIcon, TerminalIcon, AtomIcon, LayersIcon, ServerCogIcon, SquareFunctionIcon, ContainerIcon, TestTubeIcon, GitBranchIcon } from '@lucide/astro';
 
 import { t } from '../../utils/i18n';
 
@@ -16,30 +16,32 @@ const skillClusters = [
     description: t('skills.clusters.backend.description', lang),
     icon: LucideServer,
     tools: [
-      { name: 'Java', icon: CoffeeIcon },
-      { name: 'Scala', icon: LayersIcon },
-      { name: 'Python', icon: TerminalIcon },
-      { name: 'GraphQL', icon: NetworkIcon },
-      { name: 'PostgreSQL', icon: DatabaseIcon },
-      { name: 'Supabase', icon: SendIcon },
-      { name: 'Airflow', icon: WorkflowIcon },
-      { name: 'GCP & AWS', icon: CloudIcon },
-      { name: 'Docker', icon: BoxIcon },
+      { name: 'Java',       icon: CoffeeIcon },          // ☕ fits “Java”
+      { name: 'Scala',      icon: SquareFunctionIcon },  // FP vibe > Variable
+      { name: 'Python',     icon: TerminalIcon },        // scripting/CLI fits well
+      { name: 'GCP & AWS',  icon: CloudIcon },           // cloud providers
+      { name: 'Docker',     icon: ContainerIcon },       // container/box
+      { name: 'Terraform',  icon: LayersIcon },          // IaC as stacked layers
+      { name: 'PostgreSQL', icon: DatabaseIcon },        // canonical DB glyph
+      { name: 'Supabase',   icon: ServerCogIcon },       // platform on top of DB
+      { name: 'Airflow',    icon: WorkflowIcon },        // DAGs/workflows
     ]
   },
   {
     id: 'frontend',
     title: t('skills.clusters.frontend.title', lang),
     description: t('skills.clusters.frontend.description', lang),
-    icon: PanelsTopLeftIcon,
+    icon: PanelsTopLeftIcon, // more “UI layout” than PanelsTopLeft
     tools: [
-      { name: 'JavaScript', icon: BracesIcon },
-      { name: 'TypeScript', icon: FileCode2Icon },
-      { name: 'React', icon: PanelsTopLeftIcon },
-      { name: 'RedwoodJS', icon: TreePineIcon },
-      { name: 'HTML/CSS', icon: CodeXmlIcon },
-      { name: 'TailwindCSS', icon: WindIcon },
-      { name: 'Accessibility', icon: AccessibilityIcon },
+      { name: 'JavaScript',    icon: BracesIcon },          // code braces
+      { name: 'TypeScript',    icon: FileCode2Icon },       // typed code/file
+      { name: 'HTML/CSS',      icon: CodeXmlIcon },         // markup/CSS
+      { name: 'React',         icon: AtomIcon },            // strong React metaphor
+      { name: 'Redux',         icon: GitBranchIcon },       // state management
+      { name: 'RedwoodJS',     icon: TreePineIcon },        // fits the brand metaphor
+      { name: 'TailwindCSS',   icon: WindIcon },            // Tailwind = wind
+      { name: 'Jest',          icon: TestTubeIcon },        // testing framework
+      { name: 'Accessibility', icon: AccessibilityIcon },   // a11y
     ]
   },
   // {

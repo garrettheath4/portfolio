@@ -60,18 +60,18 @@
 ### 📥 Installation
 
 1. **Clone this repository**
-```bash
+```sh
 git clone https://github.com/nicremo/astro-multilingual-portfolio-template.git
 cd astro-multilingual-portfolio-template
 ```
 
 2. **Install dependencies**
-```bash
+```sh
 npm install
 ```
 
 3. **Run the development server**
-```bash
+```sh
 npm run dev
 ```
 
@@ -147,7 +147,7 @@ Add your projects by editing the project section in the language files:
 
 This site can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
-```bash
+```sh
 npm run build
 ```
 
