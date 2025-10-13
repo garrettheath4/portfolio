@@ -1,7 +1,7 @@
-export const name = "Max Example";
-export const homepage_url = "https://max-example.de/";
-export const linkedin_username = "max-example";
-export const github_username = "max-example";
+export const name = "Garrett Koller";
+export const homepage_url = "https://garrettheath4.com/";
+export const linkedin_username = "garrettheath4";
+export const github_username = "garrettheath4";
 
 /*=============================================================================\
  | The email, phone number, and address fields below are Base64 encoded to     |
@@ -22,11 +22,11 @@ export const github_username = "max-example";
  |     btoa('max-example@example.com')                                         |
  |                                                                             |
  \============================================================================*/
-const email_base64_encoded = "bWF4LWV4YW1wbGVAZXhhbXBsZS5jb20=";
-const phone_base64_encoded = "KzEgMjM0LTU2Ny04OTAx";
+const email_base64_encoded = "Y2hha3JhLWFuZ2xlMGxAaWNsb3VkLmNvbQ==";
+const phone_base64_encoded = "KzEgOTE4LTQzOS02MzYy";
 
 // The address fields below are for the privacy policy. They are also Base64 encoded.
-const address_line_1_base64_encoded = "MTIzIE1haW4gU3Q=";
+const address_line_1_base64_encoded = "NzEzIExhbW9udCBTdCBOVw==";
 const address_line_2_base64_encoded = "V2FzaGluZ3RvbiwgREM=";
 
 // The data is decoded and exported below. Do not edit below this line.
