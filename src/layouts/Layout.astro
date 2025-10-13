@@ -5,7 +5,7 @@ import '../styles/global.css';
 import { t } from '../utils/i18n'; // Import the translation helper
 import favicon_white from '../assets/favicon.png';
 import profileImg from '../assets/profile.png';
-import { name, linkedin_url, github_url } from '../utils/me';
+import { name, linkedin_url, github_url, mastodon_url, twitter_username } from '../utils/me';
 
 export interface Props {
   title?: string;
@@ -57,11 +57,13 @@ const {
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(profileImg.src, Astro.site!).href} />
-    {/* <meta name="twitter:site" content="@yourtwitterhandle"> */} {/* Optional: if you have a Twitter handle */}
-    {/* <meta name="twitter:creator" content="@yourtwitterhandle"> */} {/* Optional: if you have a Twitter handle */}
+    {twitter_username && <>
+      <meta name="twitter:site" content={"@" + twitter_username}>
+      <meta name="twitter:creator" content={"@" + twitter_username}>
+    </>}
 
     <!-- Mastodon -->
-    <link rel="me" href="https://tech.lgbt/@garrettheath4">Mastodon</a>
+    {mastodon_url && <link rel="me" href={mastodon_url}>}
 
     <!-- Hreflang links -->
     {/* For the default locale (en) */}

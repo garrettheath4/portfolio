@@ -2,6 +2,8 @@ export const name = "Garrett Koller";
 export const homepage_url = "https://garrettheath4.com/";
 export const linkedin_username = "garrettheath4";
 export const github_username = "garrettheath4";
+export const twitter_username = null;
+export const mastodon_url = "https://tech.lgbt/@garrettheath4";
 
 /*=============================================================================\
  | The email, phone number, and address fields below are Base64 encoded to     |

@@ -1,11 +1,12 @@
 {
   "site": {
     "title": "Garrett Koller - Portfolio",
-    "description": "Dualer Student für Digitale Medien mit Fokus auf Marketing, Projektmanagement & Media-Creation."
+    "description": "Senior Software Engineer creating positive social change."
   },
   "nav": {
     "start": "Start",
     "about": "Über mich",
+    "skills": "Skills",
     "projects": "Projekte",
     "contact": "Kontakt",
     "contactButton": "Kontakt"
@@ -13,85 +14,42 @@
   "hero": {
     "greeting": "Hallo, ich bin",
     "name": "Garrett Koller",
-    "pitch": "Mit strukturiertem Projekt­management sorge ich dafür, dass kreative Ideen termintreu live gehen.",
-    "role": "Dualer Student @ Digitale Medien",
+    "pitch": "I am driven to leverage my technical skills to create solutions that not only enhance the lives of individuals but also have a positive impact on society at large by focusing on diversity, accessibility, and sustainability.",
+    "role": "Lead Software Engineer @ Catalist",
     "ctaProjects": "Projekte ansehen",
     "ctaAbout": "Mehr über mich"
   },
   "values": {
     "title": "Meine Herangehensweise",
     "subtitle": "Diese drei Werte prägen meine Arbeitsweise und helfen mir, überzeugende digitale Ergebnisse zu liefern.",
-    "card1Title": "Kreativität",
-    "card1Text": "Innovative Lösungsansätze und frische Ideen sind die Basis für überzeugende digitale Ergebnisse – immer im Kontext der Marke und Zielgruppe.",
-    "card2Title": "Struktur",
-    "card2Text": "Klare Prozesse, nachvollziehbare Workflows und präzises Projektmanagement sorgen dafür, dass Ideen termingerecht und qualitativ hochwertig umgesetzt werden.",
-    "card3Title": "Impact",
-    "card3Text": "Am Ende zählt das Ergebnis: Messbarer Erfolg durch nutzerzentrierte Lösungen, die echten Mehrwert bieten und zu Conversion und Kundenzufriedenheit führen."
+    "card1Title": "Impact with Integrity",
+    "card1Text": "I prioritize building technology that serves people responsibly and contributes positively to society.",
+    "card2Title": "Craftsmanship & Clarity",
+    "card2Text": "I believe in building clear, reliable systems and user experiences that feel effortless.",
+    "card3Title": "Collaboration & Growth",
+    "card3Text": "I value collaboration, mentoring, and knowledge-sharing as essential parts of sustainable engineering."
   },
   "skills": {
     "title": "Skills & Tools",
     "subtitle": "Mit diesen Werkzeugen und Fähigkeiten setze ich Projekte effizient und kreativ um.",
     "clusters": {
       "backend": {
-        "title": "Design & Media",
-        "description": "Visuelle Konzeption und Medienproduktion für überzeugende digitale Erlebnisse."
+        "title": "Backend & Architecture",
+        "description": "Designing robust APIs, orchestrating cloud services, and keeping systems reliable and scalable."
       },
       "frontend": {
-        "title": "Web & IT",
-        "description": "Entwicklung und Betreuung von Webprojekten mit modernen Technologien."
+        "title": "Frontend & UX",
+        "description": "Development and support of web projects with modern technologies."
       },
-      "marketingContent": {
-        "title": "Marketing & Content",
-        "description": "Strategien für digitale Sichtbarkeit und zielgruppengerechte Inhalte."
-      },
-      "managementOrganization": {
-        "title": "Management & Organization",
-        "description": "Strukturierte Prozesse, effiziente Workflows und kollaborative Projektarbeit."
+      "aiML": {
+        "title": "Data & Applied AI",
+        "description": "Turning raw data and modern ML tools into usable, real-world features and insights."
       }
     },
     "category": {
       "design": "Design",
       "media": "Media",
-      "coding": "Coding",
-      "management": "Management",
-      "marketing": "Marketing",
-      "cms": "CMS"
-    },
-    "figma": {
-      "description": "UI/UX Design & Prototyping"
-    },
-    "premierePro": {
-      "description": "Videoschnitt & Animation"
-    },
-    "afterEffects": {
-      "description": "Motion Design & VFX"
-    },
-    "photoshop": {
-      "description": "Bildbearbeitung & Composing"
-    },
-    "illustrator": {
-      "description": "Vektorgrafik & Illustration"
-    },
-    "htmlCss": {
-      "description": "Frontend-Entwicklung"
-    },
-    "javascript": {
-      "description": "Interaktive Webprojekte"
-    },
-    "asana": {
-      "description": "Projektmanagement & Workflows"
-    },
-    "notion": {
-      "description": "Dokumentation & Wissensmanagement"
-    },
-    "ga4MetaAds": {
-      "description": "Kampagnen & Datenanalyse"
-    },
-    "miro": {
-      "description": "Kollaborative Konzepterstellung"
-    },
-    "wordpress": {
-      "description": "Content Management & Websites"
+      "coding": "Coding"
     }
   },
   "projects": {
@@ -121,13 +79,55 @@
   "timeline": {
     "title": "Mein Werdegang",
     "subtitle": "Ausbildung, Berufserfahrung und wichtige Stationen meiner bisherigen Laufbahn.",
-    "item1Title": "Duales Studium Digitale Medien",
-    "item1Description": "Intensiver Einblick in Medienproduktion, IT & Marketing. Fachbereiche: Marketing & Medienproduktion, Social Media.",
-    "item2Title": "Wissenschaftliche Hilfskraft",
-    "item2Description": "Praxis in High-End Medientechnologien, digitale Videoproduktion. Entwicklung von Tutorials und Dokumentationen für Medientechnik.",
-    "item3Title": "Selbstständigkeit im Medienbereich",
-    "item3Description": "Eigenständige Umsetzung von Webprojekten, Videoproduktionen und Grafikdesign. Skills: Webentwicklung, Videoschnitt, Bildbearbeitung, Projektplanung.",
-    "buttonText": "Vollständiger Lebenslauf (PDF)"
+    "buttonText": "Vollständiger Lebenslauf (PDF)",
+    "catalist": {
+      "period": "Sep 2015 – Present",
+      "title": "Lead Software Engineer",
+      "company": "Catalist, LLC",
+      "description": "Lead developer for 10 projects across 5 different languages, including Java, Scala, Python, and TypeScript"
+    },
+    "pc": {
+      "period": "Nov 2024 – Feb 2025",
+      "title": "Senior Software Engineer",
+      "company": "Private Collection",
+      "description": "Developed full-stack Redwood JS web app for real estate brokerage clients"
+    },
+    "ga": {
+      "period": "Sep-Dec 2017",
+      "title": "Continuing Education",
+      "company": "General Assembly",
+      "description": "User Experience Design course (on campus)"
+    },
+    "bah": {
+      "period": "Jul 2014 – Sep 2015",
+      "title": "Software Engineer Consultant",
+      "company": "Booz Allen Hamilton",
+      "description": "Developed mission support software written in Java EE"
+    },
+    "internship": {
+      "period": "Jun 2013 – Aug 2013",
+      "title": "Software Engineer Intern",
+      "company": "Booz Allen Hamilton",
+      "description": "Engineered browser anonymity solution using PHP, Java, and JavaScript"
+    },
+    "condor": {
+      "period": "Jun 2011 – May 2014",
+      "title": "Software Engineer Assistant",
+      "company": "Washington & Lee University",
+      "description": "Developed HTCondor supercomputing environment for campus"
+    },
+    "its": {
+      "period": "Sep 2010 – May 2014",
+      "title": "IT Client Services Assistant",
+      "company": "Washington & Lee University Help Desk",
+      "description": "Created videos promoting the ITS department, the university library, and the services they offer"
+    },
+    "wlu": {
+      "period": "2010 – 2014",
+      "title": "Undergraduate Student",
+      "company": "Washington & Lee University",
+      "description": "B.S. in Computer Science with a concentration in Music"
+    }
   },
   "footerCTA": {
     "title": "Bereit für Kollaboration?",

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Garrett Koller – Portfolio",
-    "description": "Dual Media Student focusing on Marketing, Project Management & Media Creation."
+    "description": "Senior Software Engineer creating positive social change."
   },
   "nav": {
     "start": "Start",
@@ -49,46 +49,7 @@
     "category": {
       "design": "Design",
       "media": "Media",
-      "coding": "Coding",
-      "management": "Management",
-      "marketing": "Marketing",
-      "cms": "CMS"
-    },
-    "figma": {
-      "description": "UI/UX Design & Prototyping"
-    },
-    "premierePro": {
-      "description": "Video Editing & Animation"
-    },
-    "afterEffects": {
-      "description": "Motion Design & VFX"
-    },
-    "photoshop": {
-      "description": "Image Editing & Composing"
-    },
-    "illustrator": {
-      "description": "Vector Graphics & Illustration"
-    },
-    "htmlCss": {
-      "description": "Frontend Development"
-    },
-    "javascript": {
-      "description": "Interactive Web Projects"
-    },
-    "asana": {
-      "description": "Project Management & Workflows"
-    },
-    "notion": {
-      "description": "Documentation & Knowledge Management"
-    },
-    "ga4MetaAds": {
-      "description": "Campaigns & Data Analysis"
-    },
-    "miro": {
-      "description": "Collaborative Concept Creation"
-    },
-    "wordpress": {
-      "description": "Content Management & Websites"
+      "coding": "Coding"
     }
   },
   "projects": {
@@ -118,12 +79,6 @@
   "timeline": {
     "title": "My Career Path",
     "subtitle": "Education, professional experience, and important milestones in my career so far.",
-    "item1Title": "Dual Study Program Digital Media",
-    "item1Description": "Intensive insights into media production, IT & marketing. Specializations: Marketing & Media Production, Social Media.",
-    "item2Title": "Research Assistant",
-    "item2Description": "Hands-on experience in high-end media technologies, digital video production. Development of tutorials and documentation for media technology.",
-    "item3Title": "Freelancing in Media",
-    "item3Description": "Independent implementation of web projects, video productions, and graphic design. Skills: Web Development, Video Editing, Image Editing, Project Planning.",
     "buttonText": "Full Resume (PDF)",
     "catalist": {
       "period": "Sep 2015 – Present",
