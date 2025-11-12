@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../utils/i18n';
+import { name, email, address_line_1, address_line_2 } from '../../utils/me';
+
+// Generate static paths for supported locales
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const lang = Astro.currentLocale;
+const pageTitle = "Privacy Policy | " + t('site.title', lang);
+const pageDescription = "Privacy Policy of the website " + t('site.title', lang);
+
+---
+
+<Layout title={pageTitle} description={pageDescription} lang={lang}>
+  <section class="py-16 md:py-24">
+    <div class="max-w-container mx-auto px-6">
+      <header class="text-center">
+        <h1 class="text-h1">{t('privacyPolicy.title', lang)}</h1>
+      </header>
+
+      <article class="prose dark:prose-invert max-w-none mx-auto bg-white dark:bg-neutral-dark p-6 md:p-8 rounded-lg shadow">
+        <style>
+          @reference "tailwindcss";
+
+          .prose h2 {
+            @apply [&:not(:first-child)]:mt-6 mb-2;
+            font-size: clamp(1.5rem, 3vw, 2rem)
+          }
+
+          .prose h3 {
+            @apply [&:not(:first-child)]:mt-2 mb-1;
+            font-size: clamp(1.15rem, 2vw, 1.5rem)
+          }
+
+          .prose p {
+            @apply my-2;
+          }
+
+          .prose ul {
+            @apply list-disc list-outside pl-4 mb-3;
+          }
+        </style>
+
+        <h2>{t('privacyPolicy.sections.controller.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.controller.description', lang)}</p>
+        <p>
+          {name}<br />
+          {address_line_1}<br />
+          {address_line_2}<br />
+          {t('privacyPolicy.sections.controller.emailFieldTitle', lang)} {email}
+        </p>
+
+        <h2>{t('privacyPolicy.sections.rights.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.rights.description', lang)}</p>
+        <ul>
+          <li>{t('privacyPolicy.sections.rights.rights.information', lang)}</li>
+          <li>{t('privacyPolicy.sections.rights.rights.correction', lang)}</li>
+          <li>{t('privacyPolicy.sections.rights.rights.deletion', lang)}</li>
+          <li>{t('privacyPolicy.sections.rights.rights.restriction', lang)}</li>
+          <li>{t('privacyPolicy.sections.rights.rights.objection', lang)}</li>
+          <li>{t('privacyPolicy.sections.rights.rights.portability', lang)}</li>
+        </ul>
+        <p>{t('privacyPolicy.sections.rights.revoke', lang)}</p>
+        <p>{t('privacyPolicy.sections.rights.complaint', lang)}</p>
+
+        <h2>{t('privacyPolicy.sections.collection.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.collection.description', lang)}</p>
+
+        <h3>{t('privacyPolicy.sections.collection.purpose.title', lang)}</h3>
+        <p>{t('privacyPolicy.sections.collection.purpose.description', lang)}</p>
+        <p>{t('privacyPolicy.sections.collection.purpose.items.description', lang)}</p>
+        <ul>
+          <li>{t('privacyPolicy.sections.collection.purpose.items.connection', lang)}</li>
+          <li>{t('privacyPolicy.sections.collection.purpose.items.smoothness', lang)}</li>
+          <li>{t('privacyPolicy.sections.collection.purpose.items.security', lang)}</li>
+          <li>{t('privacyPolicy.sections.collection.purpose.items.optimization', lang)}</li>
+        </ul>
+        <p>{t('privacyPolicy.sections.collection.purpose.conclusion', lang)}</p>
+        <h3>{t('privacyPolicy.sections.collection.legalBasis.title', lang)}</h3>
+        <p>{t('privacyPolicy.sections.collection.legalBasis.description', lang)}</p>
+        <h3>Recipients:</h3>
+        <p>{t('privacyPolicy.sections.collection.recipients.description', lang)}</p>
+        <h3>{t('privacyPolicy.sections.collection.storagePeriod.title', lang)}</h3>
+        <p>{t('privacyPolicy.sections.collection.storagePeriod.description', lang)}</p>
+
+        <h2>{t('privacyPolicy.sections.cookies.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.cookies.description', lang)}</p>
+
+        <h2>{t('privacyPolicy.sections.changes.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.changes.description', lang)}</p>
+
+        <h2>{t('privacyPolicy.sections.questions.title', lang)}</h2>
+        <p>{t('privacyPolicy.sections.questions.description', lang)}</p>
+
+        <p style="margin-top: 2rem;"><em>{t('privacyPolicy.lastUpdated', lang)}</em></p>
+      </article>
+    </div>
+  </section>
+</Layout>

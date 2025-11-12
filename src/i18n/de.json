@@ -148,5 +148,71 @@
     "copyright": "Alle Rechte vorbehalten.",
     "imprint": "Impressum",
     "privacyPolicy": "Datenschutz"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutz",
+    "subtitle": "Diese Datenschutzrichtlinie erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und teilen, wenn Sie unsere Website besuchen.",
+    "sections": {
+      "controller": {
+        "title": "Verantwortlicher",
+        "description": "Die Partei, die für die Verarbeitung von Daten auf dieser Website (der \"Verantwortliche\") für die Zwecke der Allgemeinen Datenschutzverordnung (GDPR) und anderer Datenschutzgesetze, die in Mitgliedstaaten der Europäischen Union und anderen Bestimmungen zur Datenschutzrecht anwendbar sind, verantwortlich ist:",
+        "emailFieldTitle": "E-Mail:"
+      },
+      "rights": {
+        "title": "Ihre Rechte als Betroffener",
+        "description": "Sie können die folgenden Rechte jederzeit unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten ausüben:",
+        "rights": {
+          "information": "Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO)",
+          "correction": "Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO)",
+          "deletion": "Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO)",
+          "restriction": "Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO)",
+          "objection": "Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO)",
+          "portability": "Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO)"
+        },
+        "revoke": "Wenn Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.",
+        "complaint": "Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde."
+      },
+      "collection": {
+        "title": "Erfassung allgemeiner Informationen beim Besuch unserer Website",
+        "description": "Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches.",
+        "purpose": {
+          "title": "Art und Zweck der Verarbeitung:",
+          "description": "Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches.",
+          "items": {
+            "description": "Sie werden insbesondere zu folgenden Zwecken verarbeitet:",
+            "connection": "Sicherstellung eines problemlosen Verbindungsaufbaus der Website,",
+            "smoothness": "Sicherstellung einer reibungslosen Nutzung unserer Website,",
+            "security": "Auswertung der Systemsicherheit und -stabilität sowie",
+            "optimization": "zur Optimierung unserer Website."
+          },
+          "conclusion": "Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Informationen dieser Art werden von uns ggfs. anonymisiert statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren."
+        },
+        "legalBasis": {
+          "title": "Rechtsgrundlage und berechtigtes Interesse:",
+          "description": "Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website."
+        },
+        "recipients": {
+          "title": "Empfänger:",
+          "description": "Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden."
+        },
+        "storagePeriod": {
+          "title": "Speicherdauer:",
+          "description": "Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies ist für die Daten, die der Bereitstellung der Webseite dienen, grundsätzlich der Fall, wenn die jeweilige Sitzung beendet ist."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Diese Webseite verwendet möglicherweise Cookies. Für detaillierte Informationen zu Cookies und Ihren Einstellungsmöglichkeiten, konsultieren Sie bitte unsere Cookie-Richtlinie (falls vorhanden) oder die Cookie-Einstellungen auf unserer Webseite."
+      },
+      "changes": {
+        "title": "Änderung unserer Datenschutzbestimmungen",
+        "description": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung."
+      },
+      "questions": {
+        "title": "Fragen an den Datenschutzbeauftragten",
+        "description": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation."
+      }
+    },
+    "lastUpdated": "Letzte Aktualisierung: Mai 2024"
   }
 }

@@ -148,5 +148,71 @@
     "copyright": "All rights reserved.",
     "imprint": "Imprint",
     "privacyPolicy": "Privacy Policy"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "This privacy policy explains how we collect, use, and share your personal information when you visit our website.",
+    "sections": {
+      "controller": {
+        "title": "The Controller",
+        "description": "The party responsible for processing data on this website (the \"controller\") for the purposes of the General Data Protection Regulation (GDPR) and other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:",
+        "emailFieldTitle": "Email:"
+      },
+      "rights": {
+        "title": "Your Rights as a Data Subject",
+        "description": "You can exercise the following rights at any time using the contact details provided for our data protection officer:",
+        "rights": {
+          "information": "Information about your data stored by us and its processing (Art. 15 GDPR)",
+          "correction": "Correction of incorrect personal data (Art. 16 GDPR)",
+          "deletion": "Deletion of your data stored by us (Art. 17 GDPR)",
+          "restriction": "Restriction of data processing, if we are not yet allowed to delete your data due to legal obligations (Art. 18 GDPR)",
+          "objection": "Objection to the processing of your data by us (Art. 21 GDPR)",
+          "portability": "Data portability, provided you have consented to data processing or have concluded a contract with us (Art. 20 GDPR)"
+        },
+        "revoke": "If you have given us consent, you can revoke it at any time with effect for the future.",
+        "complaint": "You can lodge a complaint with a supervisory authority at any time, e.g., with the competent supervisory authority in the federal state of your residence or with the authority responsible for us as the controller."
+      },
+      "collection": {
+        "title": "Collection of General Information When Visiting Our Website",
+        "description": "When you access our website, i.e., if you do not register or otherwise submit information, information of a general nature is automatically collected. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your internet service provider, your IP address, and similar data.",
+        "purpose": {
+          "title": "Nature and Purpose of Processing:",
+          "description": "When you access our website, i.e., if you do not register or otherwise submit information, information of a general nature is automatically collected. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your internet service provider, your IP address, and similar data.",
+          "items": {
+            "description": "This data is processed, in particular, for the following purposes:",
+            "connection": "Ensuring a problem-free connection to the website,",
+            "smoothness": "Ensuring smooth use of our website,",
+            "security": "Evaluating system security and stability, and",
+            "optimization": "Optimizing our website."
+          },
+          "conclusion": "We do not use your data to draw conclusions about your person. Information of this kind may be statistically analyzed by us in an anonymized form to optimize our website and the underlying technology."
+        },
+        "legalBasis": {
+          "title": "Legal Basis and Legitimate Interest:",
+          "description": "Processing is carried out in accordance with Art. 6 (1) (f) GDPR on the basis of our legitimate interest in improving the stability and functionality of our website."
+        },
+        "recipients": {
+          "title": "Recipients:",
+          "description": "Recipients of the data may be technical service providers who act as processors for the operation and maintenance of our website."
+        },
+        "storagePeriod": {
+          "title": "Storage Period:",
+          "description": "The data is deleted as soon as it is no longer required for the purpose of its collection. This is generally the case for data used to provide the website when the respective session has ended."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "This website may use cookies. For detailed information on cookies and your setting options, please consult our Cookie Policy (if available) or the cookie settings on our website."
+      },
+      "changes": {
+        "title": "Changes to Our Privacy Policy",
+        "description": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g., when introducing new services. The new privacy policy will then apply to your next visit."
+      },
+      "questions": {
+        "title": "Questions to the Data Protection Officer",
+        "description": "If you have any questions about data protection, please send us an email or contact the person responsible for data protection in our organization directly."
+      }
+    },
+    "lastUpdated": "Last updated: May 2024"
   }
 }

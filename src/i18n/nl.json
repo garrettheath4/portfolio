@@ -148,5 +148,71 @@
     "copyright": "Alle rechten voorbehouden.",
     "imprint": "Colofon",
     "privacyPolicy": "Privacybeleid"
+  },
+  "privacyPolicy": {
+    "title": "Privacybeleid",
+    "subtitle": "Dit privacybeleid legt uit hoe we persoonlijke informatie verzamelen, gebruiken en delen wanneer u onze website bezoekt.",
+    "sections": {
+      "controller": {
+        "title": "De Verwerkingsverantwoordelijke",
+        "description": "De partij die verantwoordelijk is voor de gegevensverwerking op deze website (de \"verwerkingsverantwoordelijke\") in het kader van de Algemene Verordening Gegevensbescherming (AVG) en andere wetgeving inzake gegevensbescherming die van toepassing is in lidstaten van de Europese Unie, en andere bepalingen met betrekking tot gegevensbescherming, is:",
+        "emailFieldTitle": "E-mail:"
+      },
+      "rights": {
+        "title": "Uw Rechten als Betrokkene",
+        "description": "U kunt te allen tijde de volgende rechten uitoefenen via de contactgegevens van onze functionaris voor gegevensbescherming:",
+        "rights": {
+          "information": "Informatie over uw door ons opgeslagen gegevens en de verwerking ervan (Art. 15 GDPR)",
+          "correction": "Correctie van onjuiste persoonsgegevens (Art. 16 GDPR)",
+          "deletion": "Verwijdering van uw door ons opgeslagen gegevens (Art. 17 GDPR)",
+          "restriction": "Beperking van de gegevensverwerking, indien wij uw gegevens nog niet mogen verwijderen vanwege wettelijke verplichtingen (Art. 18 GDPR)",
+          "objection": "Bezwaar tegen de verwerking van uw gegevens door ons (Art. 21 GDPR)",
+          "portability": "Gegevensoverdraagbaarheid, mits u toestemming hebt gegeven voor de gegevensverwerking of een overeenkomst met ons heeft gesloten (Art. 20 GDPR)"
+        },
+        "revoke": "Indien u ons toestemming heeft gegeven, kunt u deze te allen tijde met werking voor de toekomst intrekken.",
+        "complaint": "U kunt te allen tijde een klacht indienen bij een toezichthoudende autoriteit, bijvoorbeeld bij de bevoegde toezichthoudende autoriteit in de deelstaat waar u woont of bij de autoriteit die voor ons als verwerkingsverantwoordelijke verantwoordelijk is."
+      },
+      "collection": {
+        "title": "Verzameling van Algemene Informatie bij een Bezoek aan onze Website",
+        "description": "Wanneer u onze website bezoekt, d.w.z. wanneer u zich niet registreert of anderszins informatie verstrekt, wordt automatisch informatie van algemene aard verzameld. Deze informatie (serverlogbestanden) omvat bijvoorbeeld het type webbrowser, het gebruikte besturingssysteem, de domeinnaam van uw internetprovider, uw IP-adres en soortgelijke gegevens.",
+        "purpose": {
+          "title": "Aard en Doel van de Verwerking:",
+          "description": "Wanneer u onze website bezoekt, d.w.z. als u zich niet registreert of anderszins informatie verstrekt, wordt automatisch informatie van algemene aard verzameld. Deze informatie (serverlogbestanden) omvat bijvoorbeeld het type webbrowser, het gebruikte besturingssysteem, de domeinnaam van uw internetprovider, uw IP-adres en soortgelijke gegevens.",
+          "items": {
+            "description": "Deze gegevens worden met name verwerkt voor de volgende doeleinden:",
+            "connection": "Het waarborgen van een probleemloze verbinding met de website,",
+            "smoothness": "Het waarborgen van een soepel gebruik van onze website,",
+            "security": "Het evalueren van de systeembeveiliging enstabiliteit, en",
+            "optimization": "Het optimaliseren van onze website."
+          },
+          "conclusion": "Wij gebruiken uw gegevens niet om conclusies te trekken over uw persoon. Wij kunnen dergelijke informatie statistisch analyseren in geanonimiseerde vorm om onze website en de onderliggende technologie te optimaliseren."
+        },
+        "legalBasis": {
+          "title": "Wettelijke Grondslag en Gerechtvaardigd Belang:",
+          "description": "De verwerking vindt plaats in overeenstemming met artikel 6 (1) (f) GDPR op basis van ons gerechtvaardigd belang om de stabiliteit en functionaliteit van onze website te verbeteren."
+        },
+        "recipients": {
+          "title": "Ontvangers:",
+          "description": "Ontvangers van de gegevens kunnen technische dienstverleners zijn die optreden als verwerkers voor de werking en het onderhoud van onze website."
+        },
+        "storagePeriod": {
+          "title": "Bewaartermijn:",
+          "description": "De gegevens worden verwijderd zodra ze niet langer nodig zijn voor het doel waarvoor ze zijn verzameld. Dit is over het algemeen het geval voor gegevens die worden gebruikt om de website te leveren wanneer de betreffende sessie is beëindigd."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Deze website kan cookies gebruiken. Raadpleeg ons cookiebeleid (indien beschikbaar) of de cookie-instellingen op onze website voor gedetailleerde informatie over cookies en uw instellingsmogelijkheden."
+      },
+      "changes": {
+        "title": "Wijzigingen in ons Privacybeleid",
+        "description": "We behouden ons het recht voor om dit privacybeleid aan te passen, zodat het altijd voldoet aan de huidige wettelijke vereisten of om wijzigingen in onze diensten door te voeren in het privacybeleid, bijvoorbeeld bij de introductie van nieuwe diensten. Het nieuwe privacybeleid is dan van toepassing op uw volgende bezoek."
+      },
+      "questions": {
+        "title": "Vragen aan de Functionaris Gegevensbescherming",
+        "description": "Heeft u vragen over gegevensbescherming? Stuur ons dan een e-mail of neem rechtstreeks contact op met de persoon die verantwoordelijk is voor gegevensbescherming binnen onze organisatie."
+      }
+    },
+    "lastUpdated": "Laatst bijgewerkt: Mei 2024"
   }
 }
