@@ -49,7 +49,7 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(profileImg.src, Astro.site!).href} />
     <meta property="og:site_name" content={t('site.title', lang)} /> {/* Added site_name */}
-    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'de_DE'} /> {/* Added locale */}
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'nl_NL'} /> {/* Added locale */}
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -68,6 +68,8 @@ const {
     <!-- Hreflang links -->
     {/* For the default locale (en) */}
     <link rel="alternate" hreflang="en" href={new URL(Astro.url.pathname.replace('/de/', '/'), Astro.site!).href.replace('/de', '')} />
+    {/* For the Dutch locale */}
+    <link rel="alternate" hreflang="nl" href={new URL('/nl' + Astro.url.pathname.replace('/nl/', '/'), Astro.site!).href} />
     {/* For the German locale */}
     <link rel="alternate" hreflang="de" href={new URL('/de' + Astro.url.pathname.replace('/de/', '/'), Astro.site!).href} />
     {/* x-default */}

@@ -1,0 +1,152 @@
+{
+  "site": {
+    "title": "Garrett Koller – Portfolio",
+    "description": "Senior Software Engineer die positieve maatschappelijke verandering creëert."
+  },
+  "nav": {
+    "start": "Start",
+    "about": "Over Mij",
+    "skills": "Vaardigheden",
+    "projects": "Projecten",
+    "contact": "Contact",
+    "contactButton": "Contact"
+  },
+  "hero": {
+    "greeting": "Hallo, ik ben",
+    "name": "Garrett Koller",
+    "pitch": "Ik ben gedreven om mijn technische vaardigheden in te zetten om oplossingen te creëren die niet alleen het leven van individuen verbeteren, maar ook een positieve impact hebben op de maatschappij als geheel door te focussen op diversiteit, toegankelijkheid en duurzaamheid.",
+    "role": "Hoofdontwikkelaar @ Catalist",
+    "ctaProjects": "Projecten bekijken",
+    "ctaAbout": "Meer Over Mij"
+  },
+  "values": {
+    "title": "Mijn Waarden",
+    "subtitle": "Deze drie waarden vormen mijn werk en helpen me om aantrekkelijke software te ontwerpen.",
+    "card1Title": "Impact met Integriteit",
+    "card1Text": "Ik geef prioriteit aan het bouwen van technologie die mensen op een verantwoorde manier dient en een positieve bijdrage levert aan de maatschappij.",
+    "card2Title": "Vakmanschap & Duidelijkheid",
+    "card2Text": "Ik geloof in het bouwen van duidelijke, betrouwbare systemen en gebruikservaringen die moeiteloos aanvoelen.",
+    "card3Title": "Samenwerking & Groei",
+    "card3Text": "Ik waardeer samenwerking, mentoring en kennisdeling als essentiële onderdelen van duurzame engineering."
+  },
+  "skills": {
+    "title": "Vaardigheden & Tools",
+    "subtitle": "Met deze tools en vaardigheden implementeer ik projecten efficiënt en creatief.",
+    "clusters": {
+      "backend": {
+        "title": "Backend & Architectuur",
+        "description": "Ontwerpen van robuuste API’s, orkestreren van cloudservices en betrouwbaar en schaalbaar houden van systemen."
+      },
+      "frontend": {
+        "title": "Frontend & UX",
+        "description": "Ontwikkeling en ondersteuning van webprojecten met moderne technologieën."
+      },
+      "aiML": {
+        "title": "Data & Toegepaste AI",
+        "description": "Omzetten van ruwe data en moderne ML-tools omzetten in bruikbare, praktische functies en inzichten."
+      }
+    },
+    "category": {
+      "design": "Ontwerp",
+      "media": "Media",
+      "coding": "Coderen"
+    }
+  },
+  "projects": {
+    "title": "Geselecteerde Projecten",
+    "subtitle": "Een selectie van mijn werk uit verschillende vakgebieden – van UX/UI-ontwerp tot Motion Design en Webontwikkeling.",
+    "dbTrainingRelaunch": {
+      "shortDescription": "Concept en ontwerp van een nieuw onderwijsplatform met een geoptimaliseerde educatieplatform met geoptimaliseerde cursuszoeker en boekingsproces.",
+      "challenge": "Optimaliseren van de gebruikerservaring en conversie bij het zoeken en boeken van cursussen.",
+      "approach": "Ontwikkeling van een gebruiksgericht, mobiel geoptimaliseerd ontwerp met de focus op intuïtieve navigatie en duidelijke CTA’s voor boekingsoproepen.",
+      "result": "36% hogere conversie en 22% lager bouncepercentage in het boekingsproces vergeleken met de vorige versie."
+    },
+    "mediaDashboard": {
+      "shortDescription": "Ontwikkeling van een interactief dashboard voor realtime-analyse van campagneresultaten over alle kanalen.",
+      "challenge": "Integratie van verschillende databronnen (GA4, Meta Ads, LinkedIn) in een overzichtelijke realtime-weergave.",
+      "approach": "Concept en implementatie van een modulair dashboard met aanpasbare KPI-kaarten en filterfuncties.",
+      "result": "Vermindering van rapportagetijd met 68% en verbeterde besluitvorming door dagelijkse KPI-monitoring."
+    },
+    "dbExplainerVideos": {
+      "shortDescription": "Serie geanimeerde uitlegvideos die complexe digitaliseringsprojecten op een eenvoudige en boeiende manier overbrengen.",
+      "challenge": "Technisch complexe inhoud vereenvoudigen voor een breed publiek zonder technische expertise.",
+      "approach": "Ontwikkeling van een visueel storytelling-concept met een consistent huisstijlontwerp en duidelijke beeldtaal.",
+      "result": "Gemiddelde kijkduur van 82% en positieve feedback van leidinggevenden en projectteams."
+    },
+    "buttonText": "Meer Details",
+    "allProjectsButtonText": "Bekijk Alle Projecten"
+  },
+  "timeline": {
+    "title": "Mijn Carrièrepad",
+    "subtitle": "Opleiding, professionele ervaring en belangrijke mijlpalen in mijn carrière tot nu toe.",
+    "buttonText": "Volledig CV (PDF)",
+    "catalist": {
+      "period": "Sep 2015 – Heden",
+      "title": "Hoofdontwikkelaar",
+      "company": "Catalist, LLC",
+      "description": "Hoofdontwikkelaar voor 10 projecten in 5 verschillende talen, waaronder Java, Scala, Python en TypeScript."
+    },
+    "pc": {
+      "period": "Nov 2024 – Feb 2025",
+      "title": "Senior Software Engineer",
+      "company": "Private Collection",
+      "description": "Full-stack Redwood JS webapp ontwikkeld voor vastgoedmakelaars."
+    },
+    "ga": {
+      "period": "Sep – Dec 2017",
+      "title": "Bijscholing",
+      "company": "General Assembly",
+      "description": "Cursus User Experience Design (op de campus)."
+    },
+    "bah": {
+      "period": "Jul 2014 – Sep 2015",
+      "title": "Consultant software-engineer",
+      "company": "Booz Allen Hamilton",
+      "description": "Ontwikkelde ondersteunende software voor missies, geschreven in Java EE."
+    },
+    "internship": {
+      "period": "Jun 2013 – Aug 2013",
+      "title": "Software Engineer Stagiair",
+      "company": "Booz Allen Hamilton",
+      "description": "Browser-anonimiteitsoplossing ontwikkeld met PHP, Java en JavaScript."
+    },
+    "condor": {
+      "period": "Jun 2011 – Mei 2014",
+      "title": "Software Engineer Assistent",
+      "company": "Washington & Lee University",
+      "description": "Ontwikkelde HTCondor supercomputeromgeving voor de campus."
+    },
+    "its": {
+      "period": "Sep 2010 – Mei 2014",
+      "title": "Assistent Klantenservice Informatietechnologie",
+      "company": "Helpdesk Washington & Lee University",
+      "description": "Video’s gemaakt ter promotie van de ITS-afdeling, de universiteitsbibliotheek en de diensten ze aanbieden."
+    },
+    "wlu": {
+      "period": "2010 – 2014",
+      "title": "Bachelorstudent",
+      "company": "Washington & Lee University",
+      "description": "Bachelor in Computerwetenschappen met een specialisatie in Muziek"
+    }
+  },
+  "footerCTA": {
+    "title": "Klaar voor Samenwerking?",
+    "subtitle": "Samen kunnen we uw digitale projecten naar een hoger niveau tillen leven – met creativiteit, structuur en impact.",
+    "buttonText": "Laten We Praten"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Heb je vragen of wil je samenwerken aan een project? Ik kijk ernaar uit van je te horen!",
+    "emailTitle": "E-mail",
+    "emailButtonText": "E-mail verzenden",
+    "phoneTitle": "Telefoon",
+    "phoneButtonText": "Bellen",
+    "linkedinTitle": "LinkedIn",
+    "linkedinButtonText": "Profiel Openen"
+  },
+  "footer": {
+    "copyright": "Alle rechten voorbehouden.",
+    "imprint": "Colofon",
+    "privacyPolicy": "Privacybeleid"
+  }
+}

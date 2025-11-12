@@ -1,8 +1,10 @@
 import enTranslations from '../i18n/en.json';
+import nlTranslations from '../i18n/nl.json';
 import deTranslations from '../i18n/de.json';
 
 const translations = {
   en: enTranslations,
+  nl: nlTranslations,
   de: deTranslations,
 };
 
