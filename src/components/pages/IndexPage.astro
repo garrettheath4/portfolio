@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../sections/Hero.astro';
+import Values from '../sections/Values.astro';
+import Skills from '../sections/Skills.astro';
+import Projects from '../sections/Projects.astro';
+import Timeline from '../sections/Timeline.astro';
+import Contact from '../sections/Contact.astro';
+import FooterCTA from '../sections/FooterCTA.astro';
+import { t } from '../../utils/i18n';
+
+export interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+---
+
+<Layout title={t('site.title', lang)} description={t('site.description', lang)}>
+  <Hero lang={lang} />
+  <Values lang={lang} />
+  <Skills lang={lang} />
+  {/* <Projects lang={lang} /> */}
+  <Timeline lang={lang} />
+  <Contact lang={lang} />
+  <FooterCTA lang={lang} />
+</Layout>
