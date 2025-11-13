@@ -214,5 +214,26 @@
       }
     },
     "lastUpdated": "Laatst bijgewerkt: Mei 2024"
+  },
+  "imprint": {
+    "title": "Colofon",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "liabilityForContent": {
+        "title": "Aansprakelijkheid voor Inhoud",
+        "description": "Als dienstverlener zijn wij verantwoordelijk voor onze eigen inhoud op deze pagina's in overeenstemming met de algemene wetten overeenkomstig artikel 7 (1) TMG. Volgens paragrafen 8 tot en met 10 TMG zijn wij als dienstverlener echter niet verplicht om verzonden of opgeslagen informatie van derden te controleren of om omstandigheden te onderzoeken die duiden op illegale activiteiten.",
+        "removal": "Verplichtingen om het gebruik van informatie op grond van algemene wetten te verwijderen of te blokkeren blijven onaangetast. Aansprakelijkheid in dit opzicht is echter pas mogelijk vanaf het moment waarop kennis wordt verkregen van een specifieke overtreding van het recht. Na kennisgeving van overeenkomstige overtredingen zullen wij deze inhoud onmiddellijk verwijderen."
+      },
+      "liabilityForLinks": {
+        "title": "Aansprakelijkheid voor Links",
+        "description": "Ons aanbod bevat links naar externe websites van derden, op wier inhoud wij geen invloed hebben. Daarom kunnen wij voor deze externe inhoud geen aansprakelijkheid aanvaarden. Voor de inhoud van de gelinkte pagina's is altijd de betreffende aanbieder of exploitant van de pagina's verantwoordelijk. De gelinkte pagina's werden op het moment van linken gecontroleerd op mogelijke wettelijke overtredingen. Illegale inhoud was op het moment van koppelen niet herkenbaar.",
+        "removal": "Een permanente controle van de inhoud van de gelinkte pagina's is echter niet redelijk zonder concreet bewijs van een inbreuk. Na kennisgeving van overtredingen zullen wij dergelijke links onmiddellijk verwijderen."
+      },
+      "copyright": {
+        "title": "Auteursrecht",
+        "description": "De inhoud en werken die door de exploitanten van de site op deze pagina's zijn gemaakt, zijn onderworpen aan het Duitse auteursrecht. Vermenigvuldiging, verwerking, distributie en elke vorm van exploitatie buiten de grenzen van het auteursrecht vereisen de schriftelijke toestemming van de betreffende auteur of maker. Downloads en kopieën van deze pagina zijn alleen toegestaan voor privé, niet-commercieel gebruik.",
+        "removal": "Voor zover de inhoud op deze site niet door de exploitant is gemaakt, worden de auteursrechten van derden gerespecteerd. In het bijzonder wordt de inhoud van derden als zodanig geïdentificeerd. Mocht u toch kennis nemen van een inbreuk op het auteursrecht, informeer ons dan alstublieft. Na kennisgeving van overtredingen zullen wij dergelijke inhoud onmiddellijk verwijderen."
+      }
+    }
   }
 }
