@@ -3,19 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import { t } from '../utils/i18n';
 import { name, email, address_line_1, address_line_2 } from '../utils/me';
 
-// Generate static paths for supported locales
-export async function getStaticPaths() {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'nl' } },
-    { params: { lang: 'de' } },
-  ];
-}
-
-const lang = Astro.currentLocale;
+const lang = 'en'; // Default English route
 const pageTitle = "Privacy Policy | " + t('site.title', lang);
 const pageDescription = "Privacy Policy of the website " + t('site.title', lang);
-
 ---
 
 <Layout title={pageTitle} description={pageDescription} lang={lang}>
@@ -104,3 +94,4 @@ const pageDescription = "Privacy Policy of the website " + t('site.title', lang)
     </div>
   </section>
 </Layout>
+

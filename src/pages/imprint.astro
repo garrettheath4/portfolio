@@ -1,8 +1,9 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { t } from '../../utils/i18n';
+import Layout from '../layouts/Layout.astro';
+import { t } from '../utils/i18n';
+import { name, email, phone, address_line_1, address_line_2 } from '../utils/me';
 
-const lang = 'de'; // Explicitly English for this page
+const lang = 'en'; // Default English route
 const pageTitle = "Imprint | " + t('site.title', lang);
 const pageDescription = "Imprint of the website " + t('site.title', lang);
 ---
@@ -32,3 +33,4 @@ const pageDescription = "Imprint of the website " + t('site.title', lang);
     </div>
   </section>
 </Layout>
+

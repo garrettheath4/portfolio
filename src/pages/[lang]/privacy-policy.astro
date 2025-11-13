@@ -4,6 +4,7 @@ import { t } from '../../utils/i18n';
 import { name, email, address_line_1, address_line_2 } from '../../utils/me';
 
 // Generate static paths for supported locales
+// With prefixDefaultLocale: false, Astro automatically handles /privacy-policy (default) and /en/privacy-policy routes
 export async function getStaticPaths() {
   return [
     { params: { lang: 'en' } },
@@ -12,7 +13,7 @@ export async function getStaticPaths() {
   ];
 }
 
-const lang = Astro.currentLocale;
+const lang = Astro.currentLocale || 'en';
 const pageTitle = "Privacy Policy | " + t('site.title', lang);
 const pageDescription = "Privacy Policy of the website " + t('site.title', lang);
 

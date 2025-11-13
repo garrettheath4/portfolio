@@ -10,6 +10,7 @@ import FooterCTA from '../../components/sections/FooterCTA.astro';
 import { t } from '../../utils/i18n';
 
 // Generate static paths for supported locales
+// With prefixDefaultLocale: false, Astro automatically handles / (default) and /en/ routes
 export async function getStaticPaths() {
   return [
     { params: { lang: 'en' } },
@@ -18,7 +19,7 @@ export async function getStaticPaths() {
   ];
 }
 
-const lang = Astro.currentLocale;
+const lang = Astro.currentLocale || 'en';
 ---
 
 <Layout title={t('site.title', lang)} description={t('site.description', lang)}>

@@ -1,8 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
+import { name, email, phone, address_line_1, address_line_2 } from '../../utils/me';
 
-const lang = 'de'; // Explicitly English for this page
+// Generate static paths for supported locales
+// With prefixDefaultLocale: false, Astro automatically handles /imprint (default) and /en/imprint routes
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const lang = Astro.currentLocale || 'en';
 const pageTitle = "Imprint | " + t('site.title', lang);
 const pageDescription = "Imprint of the website " + t('site.title', lang);
 ---
@@ -32,3 +43,4 @@ const pageDescription = "Imprint of the website " + t('site.title', lang);
     </div>
   </section>
 </Layout>
+
