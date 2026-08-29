@@ -52,7 +52,14 @@ const lang = Astro.currentLocale;
     <!-- Mobile menu button -->
     <div class="flex items-center space-x-4 md:hidden">
       <ThemeToggle /> {/* Removed client:visible */}
-      <button id="mobile-menu-button" class="text-secondary dark:text-white" aria-label="Toggle Menu">
+      <button
+        id="mobile-menu-button"
+        type="button"
+        class="text-secondary dark:text-white"
+        aria-label="Toggle Menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
           <line x1="4" x2="20" y1="12" y2="12"></line>
           <line x1="4" x2="20" y1="6" y2="6"></line>
@@ -99,7 +106,8 @@ const lang = Astro.currentLocale;
     const mobileMenu = document.getElementById('mobile-menu') as HTMLElement | null;
     if (mobileMenuButton && mobileMenu) {
       mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+        const isOpen = mobileMenu.classList.toggle('hidden') === false;
+        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
       });
     }
     // Close mobile menu when clicking on a link
@@ -107,6 +115,7 @@ const lang = Astro.currentLocale;
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu?.classList.add('hidden');
+        mobileMenuButton?.setAttribute('aria-expanded', 'false');
       });
     });
   });

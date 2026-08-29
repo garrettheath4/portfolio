@@ -111,9 +111,15 @@ const {
     })} />
   </head>
   <body class="bg-white dark:bg-neutral-dark text-secondary dark:text-white transition-colors duration-300">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-white"
+    >
+      {t('nav.skipToContent', lang)}
+    </a>
     <div class="flex flex-col min-h-screen">
       <Navbar />
-      <main class="flex-grow">
+      <main id="main-content" tabindex="-1" class="flex-grow">
         <slot />
       </main>
       <Footer lang={lang} />
@@ -126,17 +132,7 @@ const {
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <!-- Initialize AOS -->
-    <script is:inline>
-      document.addEventListener('DOMContentLoaded', () => {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-out',
-          once: false,
-          offset: 50,
-        });
-      });
-    </script>
+    {/* AOS is initialized once, in src/scripts/animations.js (imported below), which also handles prefers-reduced-motion */}
 
     {/* Theme logic is now handled by src/scripts/theme-toggle.js, imported by ThemeToggle.astro component */}
     {/* <script is:inline src="../scripts/theme.js"></script> */}

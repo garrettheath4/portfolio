@@ -3,7 +3,16 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 import { stripLocalePrefix } from '../../utils/localeUrl';
 
 const currentLocale = Astro.currentLocale;
-const locales = ['en', 'nl']; // Define your supported locales
+// Define your supported locales
+const locales = [
+  {
+    code: 'en',
+    label: 'English'
+  }, {
+    code: 'nl',
+    label: 'Nederlands'
+  }
+];
 
 // Function to get the URL for a different locale
 const getLocaleUrl = (locale: string) => {
@@ -16,15 +25,16 @@ const getLocaleUrl = (locale: string) => {
 <div class="flex items-center space-x-2">
   {locales.length > 1 && locales.map(locale => (
     <a
-      href={getLocaleUrl(locale)}
+      href={getLocaleUrl(locale.code)}
       class={`px-3 py-1 text-sm font-mono rounded-full transition-colors duration-200 ${
-        currentLocale === locale
+        currentLocale === locale.code
           ? 'bg-primary text-white'
           : 'bg-gray-100 dark:bg-gray-800 text-secondary/60 dark:text-white/60 hover:bg-gray-200 dark:hover:bg-gray-700'
       }`}
-      aria-current={currentLocale === locale ? 'page' : false}
+      aria-current={currentLocale === locale.code ? 'page' : false}
+      aria-label={locale.label}
     >
-      {locale.toUpperCase()}
+      {locale.code.toUpperCase()}
     </a>
   ))}
 </div>

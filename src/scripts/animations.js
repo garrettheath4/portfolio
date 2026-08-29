@@ -7,6 +7,8 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 document.addEventListener('DOMContentLoaded', () => {
   // ScrollTrigger is registered globally via gsap.registerPlugin(ScrollTrigger)
   // Initialize AOS with custom settings
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     offset: 50,
     delay: 50,
     disableMutationObserver: false,
+    disable: () => prefersReducedMotion,
   });
 
   // Refresh AOS when window resizes
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.scrollTo({
           top: targetElement.offsetTop - navbarHeight - 20,
-          behavior: 'smooth'
+          behavior: prefersReducedMotion ? 'auto' : 'smooth'
         });
 
         // Update URL hash without scrolling
@@ -68,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Timeline section animation
   const timelineItems = document.querySelectorAll('#timeline .timeline-item');
 
-  if (timelineItems.length > 0) {
+  if (timelineItems.length > 0 && !prefersReducedMotion) {
     gsap.from(timelineItems, {
       scrollTrigger: {
         trigger: '#timeline',

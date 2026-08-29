@@ -75,6 +75,10 @@ const timelineItems = [
   gsap.registerPlugin(ScrollTrigger);
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
     const timelineDots = document.querySelectorAll('.timeline-dot'); // Selector is now correct
 
     gsap.from(timelineDots, {

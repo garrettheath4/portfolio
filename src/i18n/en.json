@@ -4,6 +4,7 @@
     "description": "Lead Software Engineer creating positive social change."
   },
   "nav": {
+    "skipToContent": "Skip to content",
     "start": "Start",
     "about": "About Me",
     "skills": "Skills",

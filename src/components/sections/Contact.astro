@@ -232,8 +232,9 @@ const { lang } = Astro.props;
 
     const emailCard = document.querySelector('a[href^="mailto"]');
     const emailAnimation = document.getElementById('email-animation');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (emailCard && emailAnimation) {
+    if (emailCard && emailAnimation && !prefersReducedMotion) {
       // Create a simple animation that resembles a paper plane flying
       emailCard.addEventListener('mouseenter', () => {
         gsap.to('#email-animation', {
