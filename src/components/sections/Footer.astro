@@ -10,7 +10,6 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const currentYear = new Date().getFullYear();
 ---
 
 <footer class="py-8 bg-white dark:bg-neutral-dark border-t border-gray-100 dark:border-gray-800">
@@ -24,10 +23,6 @@ const currentYear = new Date().getFullYear();
           <!-- Dark mode logo (hidden in light mode) -->
           <Image src={logoDark} alt={name + " Logo"} class="h-7 w-auto hidden dark:block transition-opacity duration-300" />
         </a>
-      </div>
-
-      <div class="text-sm text-secondary/60 dark:text-white/60">
-        &copy; {currentYear} {name}. {t('footer.copyright', lang)}
       </div>
 
       <div class="mt-4 md:mt-0 flex items-center space-x-6">
