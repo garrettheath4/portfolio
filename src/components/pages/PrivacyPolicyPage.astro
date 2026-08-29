@@ -10,7 +10,7 @@ export interface Props {
 const { lang } = Astro.props;
 ---
 
-<Legal titleKey="privacyPolicy.title" description="Privacy Policy of the website " + t('site.title', lang) lang={lang}>
+<Legal titleKey="privacyPolicy.title" description={"Privacy Policy of the website " + t('site.title', lang)} lang={lang}>
   <h2>{t('privacyPolicy.sections.controller.title', lang)}</h2>
   <p>{t('privacyPolicy.sections.controller.description', lang)}</p>
   <p>

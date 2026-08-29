@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.1",
@@ -30,6 +31,9 @@
     "react-dom": "npm:@preact/compat@latest"
   },
   "devDependencies": {
+    "eslint": "^10.9.1",
+    "eslint-plugin-astro": "^1.7.0",
+    "typescript-eslint": "^8.68.0",
     "vitest": "^4.1.11"
   }
 }
