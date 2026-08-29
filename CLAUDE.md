@@ -16,9 +16,21 @@ npm run preview    # preview the production build
 npm run astro      # pass-through to the Astro CLI (e.g. npm run astro check)
 npm test           # run the Vitest unit test suite once
 npm run test:watch # run Vitest in watch mode
+npm run lint       # astro check && eslint . — type/template diagnostics plus ESLint
 ```
 
-There is no linter configured in this repo.
+Node version is pinned in `.nvmrc` (currently `24.20.0`) and kept in sync across local dev, GitHub Actions
+CI, and Netlify's build environment (`netlify.toml`'s `[build.environment]`).
+
+A `simple-git-hooks` pre-commit hook (configured under `"simple-git-hooks"` in `package.json`, installed via
+the `prepare` script) runs `npm run lint && npm test` before every commit. `.github/workflows/test.yml` runs
+the same two commands in CI on every push and pull request as a backstop.
+
+### Linting
+
+`npm run lint` runs two checks: `astro check` (Astro/TypeScript diagnostics, including `.astro` template
+type-checking) and `eslint .` (config in `eslint.config.js`, using `typescript-eslint` and
+`eslint-plugin-astro`). Both must pass with zero errors.
 
 ### Unit tests
 
@@ -30,7 +42,7 @@ Vitest covers the pure-logic utilities (`*.test.ts` files live next to the modul
 - `src/utils/localeUrl.test.ts` — tests `stripLocalePrefix()`, a pure helper extracted from
   `LanguageSwitcher.astro` (which also depends on `astro:i18n`'s `getRelativeLocaleUrl`, a virtual module
   that isn't available outside an Astro build, hence the extraction).
-- `src/utils/me.test.ts` — checks the *shape* of the decoded email/phone/address (regex/length checks only).
+- `src/utils/me.test.ts` — checks the *shape* of the decoded email/address (regex/length checks only).
   **Never assert the actual decoded values in a test** — the whole point of Base64-encoding that data in
   `me.ts` is to keep it out of the repo's plaintext source, and a test with the real values would defeat
   that.

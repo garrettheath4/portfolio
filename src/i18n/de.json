@@ -88,54 +88,69 @@
     "title": "Mein Werdegang",
     "subtitle": "Ausbildung, Berufserfahrung und wichtige Stationen meiner bisherigen Laufbahn.",
     "buttonText": "Vollständiger Lebenslauf (PDF)",
-    "concurrentBadge": "Parallel zu Catalist",
+    "concurrentBadge": {
+      "catalist": "Parallel zu Catalist",
+      "wlu": "Während des Studiums"
+    },
     "catalist": {
       "period": "Sep 2015 – Present",
       "title": "Lead Software Engineer",
       "company": "Catalist, LLC",
       "description": "Lead developer for 10 projects across 5 different languages, including Java, Scala, Python, and TypeScript"
     },
+    "sopheva": {
+      "period": "Dez 2025 – Mär 2026",
+      "title": "Software Engineer Consultant",
+      "company": "Sopheva",
+      "description": "Entwickelte KI-gestützte Entscheidungsunterstützungsplattform mit Next.js, TypeScript, Prisma und dem Anthropic Claude SDK"
+    },
     "pc": {
       "period": "Nov 2024 – Feb 2025",
       "title": "Senior Software Engineer",
       "company": "Private Collection",
-      "description": "Developed full-stack Redwood JS web app for real estate brokerage clients"
+      "description": "Entwickelte eine Full-Stack-Redwood-JS-Webanwendung (React, GraphQL, Prisma) für Immobilienmakler-Kunden"
     },
     "ga": {
       "period": "Sep-Dec 2017",
       "title": "Continuing Education",
       "company": "General Assembly",
-      "description": "User Experience Design course (on campus)"
+      "description": "Absolvierte einen berufsbegleitenden Präsenzkurs in User Experience Design bei General Assembly in Washington, DC"
     },
     "bah": {
       "period": "Jul 2014 – Sep 2015",
       "title": "Software Engineer Consultant",
       "company": "Booz Allen Hamilton",
-      "description": "Developed mission support software written in Java EE"
+      "description": "Entwickelte Mission-Support-Software für einen DoD-Kunden mit Java EE, Spring, Hibernate und Oracle"
     },
     "internship": {
       "period": "Jun 2013 – Aug 2013",
       "title": "Software Engineer Intern",
       "company": "Booz Allen Hamilton",
-      "description": "Engineered browser anonymity solution using PHP, Java, and JavaScript"
+      "description": "Entwickelte eine Browser-Anonymisierungslösung für einen Bundesbehörden-Kunden mit PHP, Java und JavaScript"
     },
     "condor": {
       "period": "Jun 2011 – May 2014",
       "title": "Software Engineer Assistant",
-      "company": "Washington & Lee University",
-      "description": "Developed HTCondor supercomputing environment for campus"
+      "company": "Washington & Lee University, Fachbereich Informatik",
+      "description": "Entwickelte eine HTCondor-Supercomputing-Umgebung und leistete während des Sommers Systemadministration"
+    },
+    "helpdesk": {
+      "period": "Apr 2012 – Jun 2014",
+      "title": "Technical Specialist",
+      "company": "Washington & Lee University, Help Desk",
+      "description": "Löste ein zwei Jahre bestehendes Problem, bei dem sich das WLAN auf allen Apple-Geräten des Campus periodisch trennte"
     },
     "its": {
-      "period": "Sep 2010 – May 2014",
+      "period": "Sep 2010 – Mar 2012",
       "title": "IT Client Services Assistant",
-      "company": "Washington & Lee University Help Desk",
-      "description": "Created videos promoting the ITS department, the university library, and the services they offer"
+      "company": "Washington & Lee University, IT-Services",
+      "description": "Erstellte Videos zur Bewerbung der ITS-Abteilung, der Universitätsbibliothek und der von ihnen angebotenen Dienstleistungen"
     },
     "wlu": {
       "period": "2010 – 2014",
       "title": "Undergraduate Student",
       "company": "Washington & Lee University",
-      "description": "B.S. in Computer Science with a concentration in Music"
+      "description": "B.Sc. in Informatik mit Schwerpunkt Musik, finanziert durch ein Vollstipendium (Johnson Scholarship) über 250.000 $"
     }
   },
   "footerCTA": {

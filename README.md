@@ -54,7 +54,7 @@
 
 ### Prerequisites
 
-- Node.js 16 or higher
+- Node.js, matching the version pinned in [`.nvmrc`](.nvmrc) (currently 24.20.0) — e.g. via `nvm install && nvm use`
 - npm or yarn
 
 ### 📥 Installation
@@ -72,6 +72,11 @@
     npm install
     ```
 
+    This also installs a Git pre-commit hook (via [`simple-git-hooks`](https://github.com/toplenboren/simple-git-hooks))
+    that runs linting and tests before every commit. If your npm config gates install scripts, you may need to
+    approve `simple-git-hooks`' postinstall script (and `esbuild`/`sharp`/`fsevents`, used by the build tooling)
+    before it installs automatically.
+
 3. **Run the development server**
 
     ```shell
@@ -80,14 +85,15 @@
 
 4. **Open your browser** and navigate to `http://localhost:4321`
 
-### ✅ Running Tests
+### ✅ Running Tests and Linting
 
 This project uses [Vitest](https://vitest.dev/) for unit tests covering the i18n helpers, translation file
-parity, and other pure logic.
+parity, and other pure logic, and ESLint + `astro check` for linting/type-checking.
 
 ```shell
 npm test           # run the test suite once
 npm run test:watch # run in watch mode while developing
+npm run lint        # run astro check && eslint . — must pass with zero errors
 ```
 
 ## 🎨 Customization

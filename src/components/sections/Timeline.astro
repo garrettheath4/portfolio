@@ -7,14 +7,17 @@ interface Props {
 
 const { lang } = Astro.props;
 
+// order by start date, except for `catalist` which is currently ongoing
 const timelineItems = [
   { id: "catalist", concurrent: false },
-  { id: "pc", concurrent: true },
-  { id: "ga", concurrent: true },
+  { id: "sopheva", concurrent: "catalist" },
+  { id: "pc", concurrent: "catalist" },
+  { id: "ga", concurrent: "catalist" },
   { id: "bah", concurrent: false },
-  { id: "internship", concurrent: false },
-  { id: "condor", concurrent: false },
-  { id: "its", concurrent: false },
+  { id: "internship", concurrent: "wlu" },
+  { id: "helpdesk", concurrent: "wlu" },
+  { id: "condor", concurrent: "wlu" },
+  { id: "its", concurrent: "wlu" },
   { id: "wlu", concurrent: false },
 ] as const;
 ---
@@ -46,7 +49,7 @@ const timelineItems = [
               <span class="inline-block font-mono text-xs text-primary mb-2 uppercase tracking-wider">{t(`timeline.${item.id}.period`, lang)}</span>
               {item.concurrent && (
                 <span class="block md:inline-block md:ml-2 px-3 py-1 text-xs font-mono bg-primary/20 text-primary rounded-full mb-2">
-                  {t('timeline.concurrentBadge', lang)}
+                  {t(`timeline.concurrentBadge.${item.concurrent}`, lang)}
                 </span>
               )}
               <h3 class="font-heading text-xl text-secondary dark:text-white mb-1">{t(`timeline.${item.id}.title`, lang)}</h3>

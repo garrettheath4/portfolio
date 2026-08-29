@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Garrett Koller – Portfolio",
-    "description": "Senior Software Engineer die positieve maatschappelijke verandering creëert."
+    "description": "Lead Software Engineer die positieve maatschappelijke verandering creëert."
   },
   "nav": {
     "start": "Start",
@@ -88,54 +88,69 @@
     "title": "Mijn Carrièrepad",
     "subtitle": "Opleiding, professionele ervaring en belangrijke mijlpalen in mijn carrière tot nu toe.",
     "buttonText": "Volledig CV (PDF)",
-    "concurrentBadge": "Gelijktijdig met Catalist",
+    "concurrentBadge": {
+      "catalist": "Gelijktijdig met Catalist",
+      "wlu": "Tijdens de studie"
+    },
     "catalist": {
       "period": "Sep 2015 – Heden",
       "title": "Lead Software Engineer",
       "company": "Catalist, LLC",
       "description": "Lead Software Engineer voor 10 projecten in 5 verschillende talen, waaronder Java, Scala, Python en TypeScript."
     },
+    "sopheva": {
+      "period": "Dec 2025 – Mrt 2026",
+      "title": "Software Engineer Consultant",
+      "company": "Sopheva",
+      "description": "Ontwikkelde AI-gestuurd beslissingsondersteuningsplatform met Next.js, TypeScript, Prisma en de Anthropic Claude SDK"
+    },
     "pc": {
       "period": "Nov 2024 – Feb 2025",
       "title": "Senior Software Engineer",
       "company": "Private Collection",
-      "description": "Full-stack Redwood JS webapp ontwikkeld voor vastgoedmakelaars."
+      "description": "Ontwikkelde een full-stack Redwood JS-webapp (React, GraphQL, Prisma) voor vastgoedmakelaars"
     },
     "ga": {
       "period": "Sep – Dec 2017",
       "title": "Bijscholing",
       "company": "General Assembly",
-      "description": "Cursus User Experience Design (op de campus)."
+      "description": "Volgde een deeltijdse, on-campus cursus User Experience Design bij General Assembly in Washington, DC"
     },
     "bah": {
       "period": "Jul 2014 – Sep 2015",
       "title": "Software Engineer Consultant",
       "company": "Booz Allen Hamilton",
-      "description": "Ontwikkelde ondersteunende software voor missies, geschreven in Java EE."
+      "description": "Ontwikkelde ondersteunende software voor missies voor een DoD-klant met Java EE, Spring, Hibernate en Oracle"
     },
     "internship": {
       "period": "Jun 2013 – Aug 2013",
       "title": "Software Engineer Intern",
       "company": "Booz Allen Hamilton",
-      "description": "Browser-anonimiteitsoplossing ontwikkeld met PHP, Java en JavaScript."
+      "description": "Ontwikkelde een browser-anonimiteitsoplossing voor een federale klant met PHP, Java en JavaScript"
     },
     "condor": {
       "period": "Jun 2011 – Mei 2014",
       "title": "Software Engineer Assistant",
-      "company": "Washington & Lee University",
-      "description": "Ontwikkelde HTCondor supercomputeromgeving voor de campus."
+      "company": "Washington & Lee University, Informatica-afdeling",
+      "description": "Ontwikkelde een HTCondor-supercomputingomgeving en verzorgde systeembeheer tijdens de zomer"
+    },
+    "helpdesk": {
+      "period": "Apr 2012 – Jun 2014",
+      "title": "Technical Specialist",
+      "company": "Washington & Lee University, Helpdesk",
+      "description": "Loste een twee jaar durend probleem op waarbij de wifi op alle Apple-apparaten op de campus periodiek verbinding verloor"
     },
     "its": {
-      "period": "Sep 2010 – Mei 2014",
+      "period": "Sep 2010 – Mrt 2012",
       "title": "IT Client Services Assistant",
-      "company": "Helpdesk Washington & Lee University",
+      "company": "Washington & Lee University, IT-diensten",
       "description": "Video’s gemaakt ter promotie van de ITS-afdeling, de universiteitsbibliotheek en de diensten ze aanbieden."
     },
     "wlu": {
       "period": "2010 – 2014",
       "title": "Bachelorstudent",
       "company": "Washington & Lee University",
-      "description": "Bachelor in Computerwetenschappen met een specialisatie in Muziek"
+      "description": "Bachelor in Computerwetenschappen met een specialisatie in Muziek, gefinancierd door een volledige Johnson Scholarship van $250.000"
     }
   },
   "footerCTA": {
