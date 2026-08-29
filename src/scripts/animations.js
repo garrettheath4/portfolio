@@ -88,7 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Skills section animations - combines AOS for scroll and GSAP for hover effects
   const skillClusters = document.querySelectorAll('.skill-cluster');
 
-  if (skillClusters.length > 0) {
+  // GSAP tweens set inline styles directly via its own engine, bypassing CSS
+  // transitions entirely — the global prefers-reduced-motion CSS override
+  // can't reach them, so this must be gated here in JS instead.
+  if (skillClusters.length > 0 && !prefersReducedMotion) {
     // We'll let AOS handle the scroll animations, and use GSAP for hover effects
 
     skillClusters.forEach(cluster => {
@@ -248,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Project cards hover effect
-  const projectCards = document.querySelectorAll('#projects .group');
+  const projectCards = prefersReducedMotion ? [] : document.querySelectorAll('#projects .group');
 
   projectCards.forEach(card => {
     const image = card.querySelector('img');

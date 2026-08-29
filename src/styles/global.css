@@ -63,6 +63,22 @@ html, body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  /* Near-zero (rather than 0/none) so transitionend/animationend still fire
+     for any JS relying on them; !important since this must override
+     component-level utility classes regardless of specificity. Also covers
+     html's scroll-behavior: smooth, including for scrollIntoView() calls
+     that explicitly request smooth scrolling (e.g. Hero.astro's
+     scroll-indicator), since scrollIntoView() respects the computed
+     scroll-behavior of the scrolling box. */
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @layer components {
   /* Add component classes here */
   .container-padding {
