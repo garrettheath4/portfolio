@@ -24,7 +24,7 @@ export const mastodon_url = "https://tech.lgbt/@garrettheath4";
  |     btoa('max-example@example.com')                                         |
  |                                                                             |
  \============================================================================*/
-const email_base64_encoded = "Y2hha3JhLWFuZ2xlMGxAaWNsb3VkLmNvbQ==";
+const email_base64_encoded = "Z2FycmV0dDRubEBnbWFpbC5jb20=";
 const phone_base64_encoded = "KzEgOTE4LTQzOS02MzYy";
 
 // The address fields below are for the privacy policy. They are also Base64 encoded.
