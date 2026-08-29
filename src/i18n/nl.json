@@ -14,8 +14,8 @@
   "hero": {
     "greeting": "Hallo, ik ben",
     "name": "Garrett Koller",
-    "pitch": "Ik ben gedreven om mijn technische vaardigheden in te zetten om oplossingen te creëren die niet alleen het leven van individuen verbeteren, maar ook een positieve impact hebben op de maatschappij als geheel door te focussen op diversiteit, toegankelijkheid en duurzaamheid.",
-    "role": "Hoofdontwikkelaar @ Catalist",
+    "pitch": "Ik ben gedreven om mijn technische vaardigheden in te zetten voor het creëren van oplossingen die het leven van mensen verbeteren en een positieve impact hebben op de samenleving als geheel. Daarbij richt ik me op diversiteit, toegankelijkheid en duurzaamheid.",
+    "role": "Lead Software Engineer @ Catalist",
     "ctaProjects": "Projecten bekijken",
     "ctaAbout": "Meer Over Mij"
   },
@@ -82,9 +82,9 @@
     "buttonText": "Volledig CV (PDF)",
     "catalist": {
       "period": "Sep 2015 – Heden",
-      "title": "Hoofdontwikkelaar",
+      "title": "Lead Software Engineer",
       "company": "Catalist, LLC",
-      "description": "Hoofdontwikkelaar voor 10 projecten in 5 verschillende talen, waaronder Java, Scala, Python en TypeScript."
+      "description": "Lead Software Engineer voor 10 projecten in 5 verschillende talen, waaronder Java, Scala, Python en TypeScript."
     },
     "pc": {
       "period": "Nov 2024 – Feb 2025",
@@ -100,25 +100,25 @@
     },
     "bah": {
       "period": "Jul 2014 – Sep 2015",
-      "title": "Consultant software-engineer",
+      "title": "Software Engineer Consultant",
       "company": "Booz Allen Hamilton",
       "description": "Ontwikkelde ondersteunende software voor missies, geschreven in Java EE."
     },
     "internship": {
       "period": "Jun 2013 – Aug 2013",
-      "title": "Software Engineer Stagiair",
+      "title": "Software Engineer Intern",
       "company": "Booz Allen Hamilton",
       "description": "Browser-anonimiteitsoplossing ontwikkeld met PHP, Java en JavaScript."
     },
     "condor": {
       "period": "Jun 2011 – Mei 2014",
-      "title": "Software Engineer Assistent",
+      "title": "Software Engineer Assistant",
       "company": "Washington & Lee University",
       "description": "Ontwikkelde HTCondor supercomputeromgeving voor de campus."
     },
     "its": {
       "period": "Sep 2010 – Mei 2014",
-      "title": "Assistent Klantenservice Informatietechnologie",
+      "title": "IT Client Services Assistant",
       "company": "Helpdesk Washington & Lee University",
       "description": "Video’s gemaakt ter promotie van de ITS-afdeling, de universiteitsbibliotheek en de diensten ze aanbieden."
     },
@@ -132,7 +132,7 @@
   "footerCTA": {
     "title": "Klaar voor Samenwerking?",
     "subtitle": "Samen kunnen we uw digitale projecten naar een hoger niveau tillen leven – met creativiteit, structuur en impact.",
-    "buttonText": "Laten We Praten"
+    "buttonText": "Laten We Kennismaken"
   },
   "contact": {
     "title": "Contact",
