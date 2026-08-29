@@ -80,6 +80,16 @@
 
 4. **Open your browser** and navigate to `http://localhost:4321`
 
+### ✅ Running Tests
+
+This project uses [Vitest](https://vitest.dev/) for unit tests covering the i18n helpers, translation file
+parity, and other pure logic.
+
+```shell
+npm test           # run the test suite once
+npm run test:watch # run in watch mode while developing
+```
+
 ## 🎨 Customization
 
 ### 📝 Personal Information

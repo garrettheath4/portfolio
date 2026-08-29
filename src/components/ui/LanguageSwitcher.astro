@@ -1,13 +1,13 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n';
+import { stripLocalePrefix } from '../../utils/localeUrl';
 
 const currentLocale = Astro.currentLocale;
 const locales = ['en', 'nl']; // Define your supported locales
 
 // Function to get the URL for a different locale
 const getLocaleUrl = (locale: string) => {
-  // Get the current path without the locale prefix
-  const currentPath = Astro.url.pathname.replace(`/${currentLocale}`, '');
+  const currentPath = stripLocalePrefix(Astro.url.pathname, currentLocale);
   // Construct the new URL with the target locale
   return getRelativeLocaleUrl(locale, currentPath);
 };

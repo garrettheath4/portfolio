@@ -10,13 +10,30 @@ A personal portfolio website (garrettheath4.com) built with Astro + Tailwind CSS
 ## Commands
 
 ```shell
-npm run dev       # start dev server at http://localhost:4321
-npm run build     # production build to dist/
-npm run preview   # preview the production build
-npm run astro     # pass-through to the Astro CLI (e.g. npm run astro check)
+npm run dev        # start dev server at http://localhost:4321
+npm run build      # production build to dist/
+npm run preview    # preview the production build
+npm run astro      # pass-through to the Astro CLI (e.g. npm run astro check)
+npm test           # run the Vitest unit test suite once
+npm run test:watch # run Vitest in watch mode
 ```
 
-There is no test suite or linter configured in this repo.
+There is no linter configured in this repo.
+
+### Unit tests
+
+Vitest covers the pure-logic utilities (`*.test.ts` files live next to the module they test):
+
+- `src/utils/i18n.test.ts` — `t()`/`getTranslations()` key lookup and fallback behavior.
+- `src/i18n/parity.test.ts` — asserts `en.json`, `nl.json`, `de.json` all expose the same set of keys, so a
+  translation added in one language isn't silently missing from another.
+- `src/utils/localeUrl.test.ts` — tests `stripLocalePrefix()`, a pure helper extracted from
+  `LanguageSwitcher.astro` (which also depends on `astro:i18n`'s `getRelativeLocaleUrl`, a virtual module
+  that isn't available outside an Astro build, hence the extraction).
+- `src/utils/me.test.ts` — checks the *shape* of the decoded email/phone/address (regex/length checks only).
+  **Never assert the actual decoded values in a test** — the whole point of Base64-encoding that data in
+  `me.ts` is to keep it out of the repo's plaintext source, and a test with the real values would defeat
+  that.
 
 ## Architecture
 
