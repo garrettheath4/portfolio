@@ -1,6 +1,5 @@
 ---
 import ThemeToggle from '../ui/ThemeToggle.astro';
-import Button from '../ui/Buttons.astro'; // Ensuring .astro extension
 import LanguageSwitcher from '../ui/LanguageSwitcher.astro'; // Import the LanguageSwitcher component
 import { t } from '../../utils/i18n'; // Path relative to this component
 import { Image } from 'astro:assets';
@@ -135,7 +134,6 @@ const lang = Astro.currentLocale;
       // Assert section as HTMLElement to access offsetTop and clientHeight
       const htmlSection = section as HTMLElement;
       const sectionTop = htmlSection.offsetTop;
-      const sectionHeight = htmlSection.clientHeight;
 
       if (window.scrollY >= sectionTop - 100) {
         current = section.getAttribute('id') || '';

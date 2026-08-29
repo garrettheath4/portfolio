@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { t, getTranslations } from './i18n';
+import { t, getTranslations, type TranslationKey } from './i18n';
 
 describe('t', () => {
   it('resolves a top-level key', () => {
@@ -28,13 +28,16 @@ describe('t', () => {
 
   it('falls back to the raw key when missing everywhere', () => {
     const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
-    expect(t('nope.does.not.exist', 'en')).toBe('nope.does.not.exist');
+    // Cast: intentionally an invalid key, to exercise the runtime fallback
+    // a real caller could still hit via a dynamically-built key.
+    expect(t('nope.does.not.exist' as TranslationKey, 'en')).toBe('nope.does.not.exist');
     warn.mockRestore();
   });
 
   it('returns the raw key for a path into a non-string value (e.g. an object)', () => {
     const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
-    expect(t('nav', 'en')).toBe('nav');
+    // Cast: 'nav' is a real key, but resolves to an object, not a string leaf.
+    expect(t('nav' as TranslationKey, 'en')).toBe('nav');
     warn.mockRestore();
   });
 });

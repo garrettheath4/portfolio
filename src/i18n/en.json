@@ -55,6 +55,14 @@
   "projects": {
     "title": "Selected Projects",
     "subtitle": "A selection of my work from various fields – from UX/UI Design to Motion Design and Web Development.",
+    "tags": {
+      "uxUiDesign": "UX/UI Design",
+      "projectManagement": "Project Management",
+      "dataVisualization": "Data Visualization",
+      "webDevelopment": "Web Development",
+      "motionDesign": "Motion Design",
+      "scriptStoryboard": "Script & Storyboard"
+    },
     "dbTrainingRelaunch": {
       "shortDescription": "Conception and design of a new education platform with optimized course finder and booking process.",
       "challenge": "Optimizing user experience and conversion in searching and booking courses.",

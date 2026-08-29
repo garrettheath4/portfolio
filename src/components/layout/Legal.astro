@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { t } from '../../utils/i18n';
+import { t, type TranslationKey } from '../../utils/i18n';
 
 export interface Props {
-  titleKey: string;
+  titleKey: TranslationKey;
   description: string;
   lang: string;
 }

@@ -50,15 +50,8 @@ const { id = "theme-toggle" } = Astro.props;
 </button>
 
 <script>
-  // All logic is now in src/scripts/theme-toggle.js
-  // This script is processed by Astro due to client:* directives on ThemeToggle component usage.
-  import { initializeTheme } from '../../scripts/theme-toggle.js';
-  // initializeTheme(); // The script itself calls initializeTheme on DOMContentLoaded or immediately.
-  // So, just importing it should be enough for it to be bundled and run.
-  // If initializeTheme needs to be called explicitly per component instance, that's different.
-  // But the script is designed to run once and affect all .theme-toggle-btn elements.
-  // For Astro, client-side scripts in .astro files are bundled. If this script tag is empty
-  // or only contains imports, Astro might optimize it away unless the import has side effects
-  // or is used. The `initializeTheme()` call within theme-toggle.js itself handles execution.
-  // To ensure the module is evaluated, we can just have the import.
+  // All logic is in src/scripts/theme-toggle.js, which calls initializeTheme()
+  // itself on load. This is a side-effect-only import to ensure that module
+  // is bundled and evaluated.
+  import '../../scripts/theme-toggle.js';
 </script>

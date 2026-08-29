@@ -10,7 +10,7 @@ declare module 'react-obfuscate' {
     facetime?: string;
     href?: string;
     children?: ComponentChildren;
-    element?: any;
+    element?: string;
     obfuscate?: boolean;
     obfuscateChildren?: boolean;
     linkText?: string;

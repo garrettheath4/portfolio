@@ -36,9 +36,11 @@ describe('translation key parity', () => {
   it('every translation value is a non-empty string', () => {
     for (const [locale, keys] of Object.entries(keysByLocale)) {
       for (const key of keys) {
-        const value = key.split('.').reduce((obj: any, part) => obj?.[part], locales[locale]);
+        const value = key
+          .split('.')
+          .reduce<unknown>((obj, part) => (obj as Record<string, unknown> | undefined)?.[part], locales[locale]);
         expect(typeof value, `${locale}.${key} should be a string`).toBe('string');
-        expect(value.length, `${locale}.${key} should not be empty`).toBeGreaterThan(0);
+        expect((value as string).length, `${locale}.${key} should not be empty`).toBeGreaterThan(0);
       }
     }
   });

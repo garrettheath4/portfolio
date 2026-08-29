@@ -1,10 +1,11 @@
+import { defineConfig } from 'eslint/config';
 import eslintPluginAstro from 'eslint-plugin-astro';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: ['dist/**', '.astro/**'],
   },
   ...tseslint.configs.recommended,
-  ...eslintPluginAstro.configs['flat/recommended'],
+  ...eslintPluginAstro.configs.recommended,
 );

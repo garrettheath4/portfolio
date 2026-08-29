@@ -8,15 +8,22 @@ const translations = {
   de: deTranslations,
 };
 
-type TranslationKeys = keyof typeof deTranslations; // Or enTranslations, assuming they have the same keys
+// Union of every dot-path leading to a string leaf, e.g. "nav.start" or "site.title".
+type DotPaths<T> = T extends string
+  ? never
+  : {
+      [K in keyof T & string]: T[K] extends string ? K : `${K}.${DotPaths<T[K]>}`;
+    }[keyof T & string];
+
+export type TranslationKey = DotPaths<typeof enTranslations>;
 
 // Helper function to safely access nested keys like "nav.start"
-function getNestedValue(obj: any, path: string): string | undefined {
+function getNestedValue(obj: unknown, path: string): string | undefined {
   const keys = path.split('.');
-  let current = obj;
+  let current: unknown = obj;
   for (const key of keys) {
     if (current && typeof current === 'object' && key in current) {
-      current = current[key];
+      current = (current as Record<string, unknown>)[key];
     } else {
       return undefined;
     }
@@ -24,7 +31,7 @@ function getNestedValue(obj: any, path: string): string | undefined {
   return typeof current === 'string' ? current : undefined;
 }
 
-export function t(key: string, lang: string | undefined): string {
+export function t(key: TranslationKey, lang: string | undefined): string {
   const currentLang = lang || 'en'; // Default to 'en' if lang is undefined
   const langTranslations = translations[currentLang as keyof typeof translations] || translations.en;
 

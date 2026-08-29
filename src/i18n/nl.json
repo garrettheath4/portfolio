@@ -55,6 +55,14 @@
   "projects": {
     "title": "Geselecteerde Projecten",
     "subtitle": "Een selectie van mijn werk uit verschillende vakgebieden – van UX/UI-ontwerp tot Motion Design en Webontwikkeling.",
+    "tags": {
+      "uxUiDesign": "UX/UI-ontwerp",
+      "projectManagement": "Projectmanagement",
+      "dataVisualization": "Datavisualisatie",
+      "webDevelopment": "Webontwikkeling",
+      "motionDesign": "Motion Design",
+      "scriptStoryboard": "Script & Storyboard"
+    },
     "dbTrainingRelaunch": {
       "shortDescription": "Concept en ontwerp van een nieuw onderwijsplatform met een geoptimaliseerde educatieplatform met geoptimaliseerde cursuszoeker en boekingsproces.",
       "challenge": "Optimaliseren van de gebruikerservaring en conversie bij het zoeken en boeken van cursussen.",
