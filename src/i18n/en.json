@@ -88,6 +88,7 @@
     "title": "My Career Path",
     "subtitle": "Education, professional experience, and important milestones in my career so far.",
     "buttonText": "Full Resume (PDF)",
+    "concurrentBadge": "Concurrent with Catalist",
     "catalist": {
       "period": "Sep 2015 – Present",
       "title": "Lead Software Engineer",

@@ -7,7 +7,16 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const timelineItems = ["catalist", "pc", "ga", "bah", "internship", "condor", "its", "wlu"] as const;
+const timelineItems = [
+  { id: "catalist", concurrent: false },
+  { id: "pc", concurrent: true },
+  { id: "ga", concurrent: true },
+  { id: "bah", concurrent: false },
+  { id: "internship", concurrent: false },
+  { id: "condor", concurrent: false },
+  { id: "its", concurrent: false },
+  { id: "wlu", concurrent: false },
+] as const;
 ---
 
 <section class="py-16 md:py-24">
@@ -30,14 +39,19 @@ const timelineItems = ["catalist", "pc", "ga", "bah", "internship", "condor", "i
             data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
           >
             {/* Timeline dot - Added class="timeline-dot" */}
-            <div class="timeline-dot absolute left-0 md:left-1/2 top-0 w-5 h-5 rounded-full bg-primary border-4 border-white dark:border-neutral-dark transform -translate-x-2 md:-translate-x-2.5"></div>
+            <div class={`timeline-dot absolute left-0 md:left-1/2 top-0 w-5 h-5 rounded-full border-4 border-white dark:border-neutral-dark transform -translate-x-2 md:-translate-x-2.5 ${item.concurrent ? 'bg-primary/50' : 'bg-primary'}`}></div>
 
             <!-- Content -->
             <div class="md:w-1/2 pl-10 md:pl-0 md:pr-12 md:text-right">
-              <span class="inline-block font-mono text-xs text-primary mb-2 uppercase tracking-wider">{t(`timeline.${item}.period`, lang)}</span>
-              <h3 class="font-heading text-xl text-secondary dark:text-white mb-1">{t(`timeline.${item}.title`, lang)}</h3>
-              <h4 class="font-medium text-secondary/80 dark:text-white/80 mb-2">{t(`timeline.${item}.company`, lang)}</h4>
-              <p class="text-secondary/70 dark:text-white/70">{t(`timeline.${item}.description`, lang)}</p>
+              <span class="inline-block font-mono text-xs text-primary mb-2 uppercase tracking-wider">{t(`timeline.${item.id}.period`, lang)}</span>
+              {item.concurrent && (
+                <span class="block md:inline-block md:ml-2 px-3 py-1 text-xs font-mono bg-primary/20 text-primary rounded-full mb-2">
+                  {t('timeline.concurrentBadge', lang)}
+                </span>
+              )}
+              <h3 class="font-heading text-xl text-secondary dark:text-white mb-1">{t(`timeline.${item.id}.title`, lang)}</h3>
+              <h4 class="font-medium text-secondary/80 dark:text-white/80 mb-2">{t(`timeline.${item.id}.company`, lang)}</h4>
+              <p class="text-secondary/70 dark:text-white/70">{t(`timeline.${item.id}.description`, lang)}</p>
             </div>
 
             <div class="md:w-1/2 md:pl-12">

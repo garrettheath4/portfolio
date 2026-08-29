@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0A84FF', // Primär-Accent
-        secondary: '#102039', // Sekundär (Dark Navy)
-        highlightBlue: '#4AC1FF', // Highlight-Blau (Cyan-Edge)
+        primary: '#1590FF', // primary accent
+        secondary: '#102039', // secondary accent (Dark Navy)
+        highlightBlue: '#4AC1FF', // highlight blue (Cyan-Edge)
         neutral: {
-          bg: '#F5F8FC', // Neutrale Fläche Hell
-          dark: '#0D1117', // Kontrast-BG (Dark Mode)
+          bg: '#F5F8FC', // neutral surface light
+          dark: '#0D1117', // Contrast-BG (Dark Mode)
         },
       },
       fontFamily: {
