@@ -147,10 +147,9 @@
     "subtitle": "Have questions or want to collaborate on a project? I look forward to hearing from you!",
     "emailTitle": "Email",
     "emailButtonText": "Send Email",
-    "phoneTitle": "Phone",
-    "phoneButtonText": "Call",
+    "githubTitle": "GitHub",
     "linkedinTitle": "LinkedIn",
-    "linkedinButtonText": "Open Profile"
+    "profileButtonText": "View Profile"
   },
   "footer": {
     "copyright": "All rights reserved.",

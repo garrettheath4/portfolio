@@ -147,10 +147,9 @@
     "subtitle": "Hast du Fragen oder möchtest du an einem Projekt zusammenarbeiten? Ich freue mich auf deine Nachricht!",
     "emailTitle": "E-Mail",
     "emailButtonText": "E-Mail schreiben",
-    "phoneTitle": "Telefon",
-    "phoneButtonText": "Anrufen",
+    "githubTitle": "GitHub",
     "linkedinTitle": "LinkedIn",
-    "linkedinButtonText": "Profil öffnen"
+    "profileButtonText": "Profil ansehen"
   },
   "footer": {
     "copyright": "Alle Rechte vorbehalten.",

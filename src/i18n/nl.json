@@ -147,10 +147,9 @@
     "subtitle": "Heb je vragen of wil je samenwerken aan een project? Ik kijk ernaar uit van je te horen!",
     "emailTitle": "E-mail",
     "emailButtonText": "E-mail verzenden",
-    "phoneTitle": "Telefoon",
-    "phoneButtonText": "Bellen",
+    "githubTitle": "GitHub",
     "linkedinTitle": "LinkedIn",
-    "linkedinButtonText": "Profiel Openen"
+    "profileButtonText": "Profiel bekijken"
   },
   "footer": {
     "copyright": "Alle rechten voorbehouden.",
