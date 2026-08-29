@@ -60,20 +60,23 @@
 ### 📥 Installation
 
 1. **Clone this repository**
-```sh
-git clone https://github.com/nicremo/astro-multilingual-portfolio-template.git
-cd astro-multilingual-portfolio-template
-```
+
+    ```shell
+    git clone https://github.com/garrettheath4/portfolio.git
+    cd portfolio
+    ```
 
 2. **Install dependencies**
-```sh
-npm install
-```
+
+    ```shell
+    npm install
+    ```
 
 3. **Run the development server**
-```sh
-npm run dev
-```
+
+    ```shell
+    npm run dev
+    ```
 
 4. **Open your browser** and navigate to `http://localhost:4321`
 
@@ -82,6 +85,7 @@ npm run dev
 ### 📝 Personal Information
 
 Update your contact information in `src/utils/me.ts`:
+
 - Name
 - Homepage URL
 - LinkedIn username
@@ -89,11 +93,13 @@ Update your contact information in `src/utils/me.ts`:
 
 The following contact fields are also in `src/utils/me.ts` but are Base64 encoded to obfuscate them in the GitHub repo.
 See the comments in `me.ts` for instructions on how to encode your information in Base64 with a simple command.
+
 - Email
 - Phone
 - Address (for privacy policy)
 
 Also update your information in the following other files:
+
 - `astro.config.mjs` and `robots.txt`: Replace `https://max-example.de/` with your site's URL
 - `src/i18n/en.json` and `src/i18n/de.json`: Contains all text content in English and German
 - Replace images in `src/assets/` with your own:
@@ -147,7 +153,7 @@ Add your projects by editing the project section in the language files:
 
 This site can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
-```sh
+```shell
 npm run build
 ```
 
@@ -186,12 +192,10 @@ This project is available as open source under the terms of the [MIT License](LI
 
 ## 🙌 Contribute
 
-Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/nicremo/astro-multilingual-portfolio-template/issues).
+Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/garrettheath4/portfolio/issues).
 
 ## 💖 Credits
 
 This template was created to serve as a starting point for personal portfolio websites. Feel free to use it for your own projects!
 
----
-
-Created with ❤️ by [Fabian](https://fabian-bitzer.de).
+Based️ on [astro-multilingual-portfolio-template](https://github.com/nicremo/astro-multilingual-portfolio-template) by [Fabian](https://github.com/nicremo).
