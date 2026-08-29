@@ -53,9 +53,6 @@ const { lang } = Astro.props;
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-
-          <!-- Lottie Animation Placeholder - Paper Plane -->
-          <div id="email-animation" class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
         <h3 class="font-heading text-xl text-white mb-3">
@@ -222,60 +219,3 @@ const { lang } = Astro.props;
     </div>
   </div>
 </section>
-
-<script>
-  import { gsap } from 'gsap';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    // Simple paper plane animation for email card
-    // This could be replaced with a Lottie animation in production
-
-    const emailCard = document.querySelector('a[href^="mailto"]');
-    const emailAnimation = document.getElementById('email-animation');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (emailCard && emailAnimation && !prefersReducedMotion) {
-      // Create a simple animation that resembles a paper plane flying
-      emailCard.addEventListener('mouseenter', () => {
-        gsap.to('#email-animation', {
-          opacity: 1,
-          duration: 0.3,
-        });
-
-        // This is where you'd normally initialize a Lottie animation
-        // For this demo, we'll create a simple paper plane with GSAP
-        const paperPlane = document.createElement('div');
-        paperPlane.style.position = 'absolute';
-        paperPlane.style.width = '20px';
-        paperPlane.style.height = '20px';
-        paperPlane.style.backgroundColor = 'transparent';
-        paperPlane.style.left = '50%';
-        paperPlane.style.top = '50%';
-        paperPlane.style.transform = 'translate(-50%, -50%)';
-
-        emailAnimation.innerHTML = '';
-        emailAnimation.appendChild(paperPlane);
-
-        // Simple animation
-        gsap.fromTo(
-          paperPlane,
-          { opacity: 0, scale: 0.5 },
-          {
-            opacity: 1,
-            scale: 1,
-            rotation: 360,
-            duration: 0.8,
-            ease: 'back.out(1.7)',
-          },
-        );
-      });
-
-      emailCard.addEventListener('mouseleave', () => {
-        gsap.to('#email-animation', {
-          opacity: 0,
-          duration: 0.3,
-        });
-      });
-    }
-  });
-</script>
