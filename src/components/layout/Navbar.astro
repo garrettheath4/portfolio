@@ -90,13 +90,14 @@ const lang = Astro.currentLocale;
 </header>
 
 <script>
-  // Utility to (re)attach mobile menu event listeners
-  function attachMobileMenuListeners() {
+  // Attach mobile menu event listeners once. The button and menu are never
+  // removed/recreated on resize (Tailwind's `md:hidden` is pure CSS), so
+  // there's no need to reattach on resize — doing so previously caused
+  // duplicate `click` listeners to stack up on every resize event.
+  document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuButton = document.getElementById('mobile-menu-button') as HTMLElement | null;
     const mobileMenu = document.getElementById('mobile-menu') as HTMLElement | null;
     if (mobileMenuButton && mobileMenu) {
-      // Remove previous listener if any
-      (mobileMenuButton as HTMLElement).onclick = null;
       mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
@@ -104,19 +105,10 @@ const lang = Astro.currentLocale;
     // Close mobile menu when clicking on a link
     const mobileLinks = document.querySelectorAll('#mobile-menu a');
     mobileLinks.forEach(link => {
-      (link as HTMLElement).onclick = null;
       link.addEventListener('click', () => {
         mobileMenu?.classList.add('hidden');
       });
     });
-  }
-
-  // Attach listeners on DOMContentLoaded and after resize (in case of responsive changes)
-  document.addEventListener('DOMContentLoaded', () => {
-    attachMobileMenuListeners();
-  });
-  window.addEventListener('resize', () => {
-    attachMobileMenuListeners();
   });
 
   // Add shadow on scroll
