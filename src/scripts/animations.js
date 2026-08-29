@@ -101,9 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const clusterIcon = cluster.querySelector('.icon-container svg');
 
       // Enhanced cluster hover effect with more dynamic animations
+      // (the cluster's own lift/border/shadow is handled by the shared
+      // .card-hover-scale CSS class instead, for consistency with the
+      // Values and Contact cards — this timeline only handles the
+      // icon/header/description/tool-item micro-interactions)
       const primaryColorRGB = getComputedStyle(document.documentElement).getPropertyValue('--color-primary-rgb').trim() || '37, 99, 235';
-      const initialBorderColor = getComputedStyle(cluster).borderColor;
-      const initialBoxShadow = getComputedStyle(cluster).boxShadow;
 
       // Create a hover timeline for more coordinated animations
       let hoverTimeline;
@@ -117,13 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add various animations to the timeline
         hoverTimeline
-          .to(cluster, {
-            borderColor: `rgba(${primaryColorRGB}, 1)`,
-            boxShadow: `0 8px 16px -3px rgba(${primaryColorRGB}, 0.25), 0 5px 10px -4px rgba(${primaryColorRGB}, 0.15)`,
-            y: -5,
-            duration: 0.3,
-            ease: 'power2.out'
-          }, 0)
           .to(clusterIcon, {
             scale: 1.15,
             rotate: 5,
@@ -158,13 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Reset all animations
         hoverTimeline
-          .to(cluster, {
-            borderColor: initialBorderColor,
-            boxShadow: initialBoxShadow,
-            y: 0,
-            duration: 0.3,
-            ease: 'power2.out'
-          }, 0)
           .to(clusterIcon, {
             scale: 1,
             rotate: 0,

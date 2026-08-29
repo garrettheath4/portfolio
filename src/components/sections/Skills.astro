@@ -72,7 +72,7 @@ const skillClusters = [
       {skillClusters.map((cluster, index) => (
         <div
           id={cluster.id}
-          class="skill-cluster bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
+          class="group skill-cluster card-hover-scale bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay={index * 150}
@@ -82,7 +82,7 @@ const skillClusters = [
               {/* SVG for Cluster Icon with specific paths */}
               <cluster.icon size=26 stroke-width=1.75 />
             </div>
-            <h3 class="font-heading text-xl text-secondary dark:text-white">
+            <h3 class="font-heading text-xl text-secondary dark:text-white group-hover:text-primary transition-colors duration-300">
               {cluster.title}
             </h3>
           </div>

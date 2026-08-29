@@ -77,6 +77,15 @@ html, body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* .card-hover-scale (below) sets its own !important transition to beat
+     AOS's higher-specificity duration/delay — but among tied-!important
+     declarations, ordinary specificity still applies, so its class
+     selector beats the universal selector above. It needs its own,
+     equally-specific override here to actually be reduced-motion-safe. */
+  .card-hover-scale {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer components {
@@ -90,12 +99,28 @@ html, body {
     transition: all 0.3s ease;
   }
 
-  .skill-cluster:hover,
-  .skill-cluster.hover-effect {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(var(--color-primary-rgb), 0.1),
-                0 4px 6px -2px rgba(var(--color-primary-rgb), 0.05);
-    border-color: rgba(var(--color-primary-rgb), 0.3);
+  /* Shared hover-lift for cards that also use AOS's fade-up entrance
+     (Values, Contact, Skills clusters). AOS's own [data-aos].aos-animate
+     rule sets `transform` with higher specificity than a plain Tailwind
+     hover:scale-* utility (it doubles its attribute selector), so a plain
+     utility class can never win here — !important is required regardless
+     of source order.
+
+     !important on the whole shorthand (not just transform on :hover) also
+     matters: AOS writes its global duration/delay config onto <body> as
+     data-aos-duration/data-aos-delay attributes, and its body-scoped rule
+     (`body[data-aos-duration="800"] [data-aos] { transition-duration: .8s }`)
+     has higher specificity than a plain duration-300 utility and applies
+     transition-duration/-delay to *every* transition on the element, not
+     just AOS's own entrance fade — without !important here, hovering these
+     cards inherits AOS's 800ms duration plus each card's own
+     data-aos-delay, not the intended 300ms. */
+  .card-hover-scale {
+    transition: transform 0.3s ease !important;
+  }
+
+  .card-hover-scale:hover {
+    transform: scale(1.05) !important;
   }
 
   .cluster-tools {
